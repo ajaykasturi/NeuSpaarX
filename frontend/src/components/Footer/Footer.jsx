@@ -29,12 +29,22 @@ function Footer() {
         </div>
         <div className="flex flex-col gap-y-6 items-start grow">
           <div className="text-2xl font-medium">Services</div>
-          <div className="">Business Intelligence</div>
-          <div className="">Cloud computing</div>
-          <div className="">Data Science & ML</div>
-          <div className="">Data management</div>
-          <div className="">Devops</div>
-          <div className="">Business Apps</div>
+          <div className="flex gap-x-8">
+            <div className="flex flex-col gap-y-6 items-start">
+              <div className="">Business Intelligence</div>
+              <div className="">Data Science & ML</div>
+              <div className="">Data management</div>
+              <div className="">Data Engineering</div>
+              <div className="">Big Data</div>
+            </div>
+            <div className="flex flex-col gap-y-6 items-start">
+              <div>Data Migration</div>
+              <div className="">Business Apps</div>
+              <div className="">Cloud computing</div>
+              <div className="">Devops</div>
+              <div className="">Web Development</div>
+            </div>
+          </div>
         </div>
         <div className="flex flex-col gap-y-6 items-center grow">
           <div className="text-2xl font-medium">Business</div>
