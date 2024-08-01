@@ -1,10 +1,11 @@
 import React from "react";
-
+import Layout from "./layout/Layout";
+import { Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}></Route>
+    </Routes>
   );
 }
 
