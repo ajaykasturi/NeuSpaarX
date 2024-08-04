@@ -44,7 +44,7 @@ const Navbar = () => {
         {navConfig.map((item) => (
           <a
             href={`#${item.link}`}
-            key={item.link}
+            key={item.name}
             className={`flex items-center px-5 py-2 rounded-full ${
               item.styles ? item.styles : ""
             } ${

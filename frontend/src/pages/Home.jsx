@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <div className="h-screen absolute -z-10 w-full">
+      {/* <div className="h-screen absolute -z-10 w-full">
         <img src={bgImgHome} className="w-full h-full object-cover" />
       </div>
       <div className="flex items-center justify-end gap-x-8">
@@ -16,7 +16,7 @@ function Home() {
         <div className="min-h-fit">
           <img src={aiHands} className="h-full w-full object-cover" />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
