@@ -25,7 +25,7 @@ const Navbar = () => {
     {
       name: "Contact Us",
       link: "contact-us",
-      styles: "bg-[#274797] text-white max-[490px]:hidden",
+      styles: "bg-[#274797] text-white max-[510px]:hidden",
     },
     {
       name: <EllipsisVertical />,
@@ -40,7 +40,7 @@ const Navbar = () => {
       <NavLink to="/" className="h-12" onClick={() => handleLink("")}>
         <img src={logo} className="w-full h-full" alt="NeuspaRx Logo" />
       </NavLink>
-      <nav className="flex gap-x-4 justify-center items-center">
+      <nav className="flex gap-x-1 justify-center items-center">
         {navConfig.map((item) => (
           <a
             href={`#${item.link}`}

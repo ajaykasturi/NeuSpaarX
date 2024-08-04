@@ -7,7 +7,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 function Footer() {
   return (
-    <footer className="flex flex-col gap-y-6 w-full px-10 py-8 bottom-0">
+    <footer className="flex flex-col gap-y-6 w-full px-10 py-8">
       <div className="flex flex-row gap-12 justify-between">
         <div className="flex flex-col gap-y-6 items-start grow">
           <div className="h-16">
@@ -46,14 +46,14 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-6 items-center grow">
+        <div className="flex flex-col gap-y-6 items-start grow">
           <div className="text-2xl font-medium">Business</div>
           <div className="">Blog</div>
           <div className="">Case studies</div>
           <div className="">About us</div>
           <div className="">Contact</div>
         </div>
-        <div className="flex flex-col gap-y-6 items-center grow">
+        <div className="flex flex-col gap-y-6 items-start ">
           <div className="text-2xl font-medium">Get In Touch</div>
           <div className="flex gap-x-4">
             <FacebookIcon />
