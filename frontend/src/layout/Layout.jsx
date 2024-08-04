@@ -5,7 +5,7 @@ import Footer from "../components/Footer/Footer";
 function Layout() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Home />
+      {/* <Home /> */}
       <Footer />
     </div>
   );

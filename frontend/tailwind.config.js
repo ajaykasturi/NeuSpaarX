@@ -6,6 +6,9 @@ export default {
       colors: {
         appcolor: "#0C1F50",
       },
+      backgroundImage: {
+        "footer-bg": "url('./src/assets/images/footer-bg.png')",
+      },
     },
   },
   plugins: [],

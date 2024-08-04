@@ -5,11 +5,14 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import bgFooter from "../../assets/images/footer-bg.png";
 function Footer() {
   return (
-    <footer className="flex flex-col gap-y-6 w-full px-10 py-8">
-      <div className="flex flex-row gap-12 justify-between">
-        <div className="flex flex-col gap-y-6 items-start grow">
+    <footer
+      className={`flex flex-col gap-y-6 w-full px-10 py-8 bg-footer-bg bg-no-repeat bg-cover max-[899px]:items-center`}
+    >
+      <div className="flex max-[899px]:flex-col gap-12 grow flex-row max-[899px]:items-center">
+        <div className="flex flex-col gap-y-6 items-start shrink-0 grow">
           <div className="h-16">
             <img src={logo} className="w-full h-full" alt="NeuspaRx Logo" />
           </div>
@@ -27,46 +30,43 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-6 items-start grow">
-          <div className="text-2xl font-medium">Services</div>
-          <div className="flex gap-x-8">
-            <div className="flex flex-col gap-y-6 items-start">
-              <div className="">Business Intelligence</div>
-              <div className="">Data Science & ML</div>
-              <div className="">Data management</div>
-              <div className="">Data Engineering</div>
-              <div className="">Big Data</div>
+        <div className="flex gap-x-10  justify-between grow-[3] max-[590px]:flex-col max-[590px]:gap-y-10 max-[590px]:">
+          <div className="flex gap-x-10 grow">
+            <div className="flex flex-col gap-y-6 items-start grow">
+              <div className="text-2xl font-medium">Services</div>
+              <div className="flex gap-x-8">
+                <div className="flex flex-col gap-y-6 items-start">
+                  <div className="">Business Intelligence</div>
+                  <div className="">Cloud computing</div>
+                  <div className="">Data Science & ML</div>
+                  <div className="">Data management</div>
+                  <div className="">Devops</div>
+                </div>
+              </div>
             </div>
-            <div className="flex flex-col gap-y-6 items-start">
-              <div>Data Migration</div>
-              <div className="">Business Apps</div>
-              <div className="">Cloud computing</div>
-              <div className="">Devops</div>
-              <div className="">Web Development</div>
+            <div className="flex flex-col gap-y-6 items-start grow">
+              <div className="text-2xl font-medium">Business</div>
+              <div className="">Blog</div>
+              <div className="">Case studies</div>
+              <div className="">About us</div>
+              <div className="">Contact</div>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col gap-y-6 items-start grow">
-          <div className="text-2xl font-medium">Business</div>
-          <div className="">Blog</div>
-          <div className="">Case studies</div>
-          <div className="">About us</div>
-          <div className="">Contact</div>
-        </div>
-        <div className="flex flex-col gap-y-6 items-start ">
-          <div className="text-2xl font-medium">Get In Touch</div>
-          <div className="flex gap-x-4">
-            <FacebookIcon />
-            <XIcon />
-            <InstagramIcon />
-            <LinkedInIcon />
-          </div>
-          <div className="bg-[#ffffff] border rounded-full px-5 py-2 hover:bg-[#274797] hover:text-white">
-            Contact Us
+          <div className="flex flex-col gap-y-6 items-start max-[899px]:grow max-[590px]:self-center max-[590px]:items-center">
+            <div className="text-2xl font-medium">Get In Touch</div>
+            <div className="flex gap-x-4">
+              <FacebookIcon />
+              <XIcon />
+              <InstagramIcon />
+              <LinkedInIcon />
+            </div>
+            <div className="bg-[#ffffff] border rounded-full px-5 py-2 hover:bg-[#274797] hover:text-white">
+              Contact Us
+            </div>
           </div>
         </div>
       </div>
-      <div className="h-[0.1875rem] bg-[#757575]"></div>
+      <div className="h-[0.1875rem] bg-[#757575] self-stretch"></div>
       <div className="text-base font-normal">
         Copyright © 2023 Neuspaarx, All Rights Reserved | Privacy Policy
       </div>
