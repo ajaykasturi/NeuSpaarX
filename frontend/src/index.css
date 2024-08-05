@@ -10,7 +10,22 @@
   border-radius: 0.9375rem;
   border: 2px solid transparent; /* Required to show the gradient border */
   background-clip: padding-box; /* Ensures the background gradient stays inside the border */
-  background: linear-gradient(white, rgba(255, 255, 255, 0.9)) padding-box,
-    linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgba(39, 71, 151, 1))
+  background: linear-gradient(#f6f6f6, #f6f6f6) padding-box,
+    linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 1),
+        rgba(39, 71, 151, 1)
+      )
       border-box;
+}
+
+.overlay::before,
+.overlay::after {
+  @apply absolute content-[''] top-0  w-[150px] h-full z-10;
+}
+.before-overlay::before {
+  @apply left-0 bg-gradient-to-l from-transparent to-[#f0f0f0];
+}
+.after-overlay::after {
+  @apply right-0 bg-gradient-to-r from-transparent to-[#F5F5F5];
 }

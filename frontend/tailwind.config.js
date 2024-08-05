@@ -8,7 +8,7 @@ export default {
       },
       colors: {
         appcolor: "#0C1F50",
-        "focuscard-bg": "rgba(255, 255, 255, 0.51)",
+        "focuscard-bg": "#F6F6F6",
         companycolor: "#274797",
       },
       backgroundImage: {
@@ -16,6 +16,16 @@ export default {
         "wefocuson-bg": "url('./src/assets/images/bg-wefocuson.png')",
         borderImg:
           "linear-gradient(white, rgb(255, 255, 255)) padding-box, linear-gradient(to right,rgba(255, 255, 255, 1),rgba(39, 71, 151, 1))border-box",
+      },
+      keyframes: {
+        slide: {
+          "100%": {
+            transform: "translateX(calc(-50% - 2rem))",
+          },
+        },
+      },
+      animation: {
+        autoScrollInfinite: "slide 20s infinite linear",
       },
     },
   },

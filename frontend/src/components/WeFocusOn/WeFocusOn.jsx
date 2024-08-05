@@ -7,15 +7,20 @@ function WeFocusOn() {
     { icon: "", title: "Innovation & Commitment" },
     { icon: "", title: "Continuos Learning" },
     { icon: "", title: "Less manual effort" },
-    { icon: "", title: "Innovation & Commitment1" },
+    { icon: "", title: "NueSpaarX" },
   ];
+  const concatConfig = [...cardConfig, ...cardConfig];
   return (
-    <div className="bg-wefocuson-bg bg-no-repeat bg-cover h-[30rem] w-full rounded-3xl py-16 pl-24 flex flex-col gap-y-12 my-12">
-      <div className="font-normal text-[4rem] font-Poppins">We Focus On</div>
-      <div className="flex gap-x-16 overflow-auto p-6">
-        {cardConfig.map((card) => (
-          <FocusCard key={card.title} card={card} />
-        ))}
+    <div className="bg-wefocuson-bg bg-no-repeat bg-cover w-full rounded-3xl py-16 px-6 flex flex-col gap-y-12 my-6">
+      <div className="font-normal text-[4rem] font-Poppins text-center">
+        We Focus On
+      </div>
+      <div className="py-4 overflow-hidden whitespace-nowrap w-full relative overlay after-overlay before-overlay  border-0 hover:[animation-play-state:paused]">
+        <div className="flex gap-x-16 animate-autoScrollInfinite hover:[animation-play-state:paused] w-max">
+          {concatConfig.map((card, index) => (
+            <FocusCard key={`${card.title}-${index}`} card={card} />
+          ))}
+        </div>
       </div>
     </div>
   );
