@@ -2,7 +2,7 @@ import React from "react";
 import CallMadeIcon from "@mui/icons-material/CallMade";
 function Card({ card }) {
   return (
-    <div className="flex flex-col items-center gap-y-8 px-11 py-8 w-[23rem] h-[23rem] rounded-[6.25rem] gradient-border relative">
+    <div className="flex flex-col items-center gap-y-8 px-11 py-8 w-[23rem] h-[23rem] rounded-[6.25rem] gradient-border relative cursor-pointer">
       <div className="rounded-full size-20 bg-white border-[1px] border-slate-300"></div>
       <div className="flex flex-col items-center gap-y-3">
         <div className="font-Poppins text-2xl font-semibold">{card.title}</div>

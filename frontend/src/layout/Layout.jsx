@@ -6,10 +6,13 @@ import WeFocusOn from "../components/WeFocusOn/WeFocusOn";
 import AboutUs from "../components/AboutUs/AboutUs";
 import Card from "../components/Services/Card";
 import Services from "../components/Services/Services";
+import Carousel from "../components/Courosel/Carousel";
+
 function Layout() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
+      <Carousel />
       <AboutUs />
       <WeFocusOn />
       <Services />
