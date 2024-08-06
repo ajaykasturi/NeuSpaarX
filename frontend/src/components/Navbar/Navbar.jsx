@@ -36,7 +36,7 @@ const Navbar = () => {
     setActiveLink(link);
   }
   return (
-    <header className="flex justify-between px-10 py-6 w-full bottom-0">
+    <header className="flex justify-between px-10 py-6 w-full">
       <NavLink to="/" className="h-12" onClick={() => handleLink("")}>
         <img src={logo} className="w-full h-full" alt="NeuspaRx Logo" />
       </NavLink>

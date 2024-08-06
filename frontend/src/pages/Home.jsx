@@ -2,22 +2,18 @@ import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import bgImgHome from "../assets/images/bgimg.png";
 import aiHands from "../assets/images/aihands2.png";
+import Carousel from "../components/Courosel/Carousel";
 function Home() {
   return (
-    <>
-      <Navbar />
-      {/* <div className="h-screen absolute -z-10 w-full">
-        <img src={bgImgHome} className="w-full h-full object-cover" />
+    <div className="mb-12">
+      <div className="flex flex-col min-h-dvh  relative ">
+        <div className="absolute -z-10 w-full h-full">
+          <img src={bgImgHome} className="w-full h-full" />
+        </div>
+        <Navbar />
+        <Carousel />
       </div>
-      <div className="flex items-center justify-end gap-x-8">
-        <div className="text-9xl pl-10 font-light">
-          Unleash the <br /> Power of <span className="font-black">AI</span>{" "}
-        </div>
-        <div className="min-h-fit">
-          <img src={aiHands} className="h-full w-full object-cover" />
-        </div>
-      </div> */}
-    </>
+    </div>
   );
 }
 

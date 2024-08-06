@@ -10,11 +10,7 @@
   border: 2px solid transparent; /* Required to show the gradient border */
   background-clip: padding-box; /* Ensures the background gradient stays inside the border */
   background: linear-gradient(#f6f6f6, #f6f6f6) padding-box,
-    linear-gradient(
-        to bottom right,
-        rgba(255, 255, 255, 1),
-        rgb(39, 71, 151)
-      )
+    linear-gradient(to bottom right, rgba(255, 255, 255, 1), rgb(39, 71, 151))
       border-box;
 }
 

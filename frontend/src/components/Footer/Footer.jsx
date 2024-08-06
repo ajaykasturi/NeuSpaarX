@@ -1,11 +1,10 @@
 import React from "react";
 import logo from "../../assets/images/neuspaarxlogo.png";
-import { MapPin, Phone, Mail } from "lucide-react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import bgFooter from "../../assets/images/footer-bg.png";
+import Address from "./Address";
 function Footer() {
   return (
     <footer
@@ -16,19 +15,7 @@ function Footer() {
           <div className="h-16">
             <img src={logo} className="w-full h-full" alt="NeuspaRx Logo" />
           </div>
-          <div className="flex flex-col gap-4 items-start">
-            <div className="flex gap-1">
-              <MapPin /> <div>Hyderabad, Telangana, India 500081</div>
-            </div>
-            <div className="flex gap-1">
-              <Phone />
-              <div>+91 70130 47815</div>
-            </div>
-            <div className="flex gap-1">
-              <Mail />
-              <div>neuspaarx@gmail.com</div>
-            </div>
-          </div>
+          <Address />
         </div>
         <div className="flex gap-x-10  justify-between grow-[3] max-[590px]:flex-col max-[590px]:gap-y-10 max-[590px]:">
           <div className="flex gap-x-10 grow">

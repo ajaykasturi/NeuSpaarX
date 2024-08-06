@@ -18,6 +18,7 @@ export default {
           "linear-gradient(white, rgb(255, 255, 255)) padding-box, linear-gradient(to right,rgba(255, 255, 255, 1),rgba(39, 71, 151, 1))border-box",
         servicesBg: "url('./src/assets/images/services-bg.png')",
         mainBgImg: "url('./src/assets/images/bgimg.png')",
+        formBg: "linear-gradient(156deg, #D0D0D015.14%, #EAEAEA91.23%)",
       },
       keyframes: {
         slide: {
