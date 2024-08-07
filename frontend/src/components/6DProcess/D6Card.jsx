@@ -2,7 +2,7 @@ import React from "react";
 
 function D6Card({ card }) {
   return (
-    <div className="grid grid-cols-2 grid-rows-1 gradient-border rounded-2xl break-words [aspect-ratio: 75 / 32] h-[32rem]">
+    <div className="grid grid-cols-2 grid-rows-1 gradient-border rounded-2xl break-words [aspect-ratio: 75 / 32] h-[32rem] sticky top-36">
       <div className="bg-D6Img rounded-l-2xl">
         <img src={card.img} className="w-full h-full object-contain" />
       </div>

@@ -45,13 +45,15 @@ function D6Process() {
     },
   ];
   return (
-    <div className="flex flex-col gap-y-16  mx-[8vw] my-16">
-      <div className="text-[#1B2C59] text-6xl font-Poppins text-center">
+    <div className="flex flex-col gap-y-16  mx-[8vw] my-16  relative">
+      <div className="text-[#1B2C59] text-6xl font-Poppins text-center sticky top-10">
         Our 6-D Process
       </div>
-      {config.map((card) => (
-        <D6Card key={card.id} card={card} />
-      ))}
+      <div className="flex flex-col gap-y-16 relative">
+        {config.map((card) => (
+          <D6Card key={card.id} card={card} />
+        ))}
+      </div>
     </div>
   );
 }
