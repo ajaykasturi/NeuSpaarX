@@ -6,9 +6,7 @@ function Card({ card }) {
       <div className="rounded-full size-20 bg-white border-[1px] border-slate-300"></div>
       <div className="flex flex-col items-center gap-y-3">
         <div className="font-Poppins text-2xl font-semibold">{card.title}</div>
-        <div className="text-justify font-Poppins text-lg font-normal">
-          {card.content}
-        </div>
+        <div className="font-Poppins text-lg font-normal">{card.content}</div>
       </div>
       <div className="size-[3.8355555rem]  border-t-companycolor border-l-companycolor border-b-transparent border-r-transparent rounded-full absolute bottom-0 right-0 border-2 border-slate-500 bg-[#EAEAEA]">
         <div className="rounded-full border-2 absolute bottom-0 right-0 border-companycolor size-[3rem] flex justify-center items-center">

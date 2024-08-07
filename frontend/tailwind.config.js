@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontSize: {
+        headingClamp: "clamp(1rem, 5vw, 3rem)",
+      },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
       },
@@ -19,6 +22,8 @@ export default {
         servicesBg: "url('./src/assets/images/services-bg.png')",
         mainBgImg: "url('./src/assets/images/bgimg.png')",
         formBg: "linear-gradient(156deg, #D0D0D015.14%, #EAEAEA91.23%)",
+        D6Img: "linear-gradient(133deg, #F4F4F4 30.87%, #E1E1E1 70.65%)",
+        whyBg: "url('./src/assets/images/whyneusparxbg.png')",
       },
       keyframes: {
         slide: {

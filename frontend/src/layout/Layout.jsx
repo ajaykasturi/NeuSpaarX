@@ -9,15 +9,19 @@ import Carousel from "../components/Courosel/Carousel";
 import ContactUs from "../components/ContactUs/ContactUs";
 import Industries from "../components/Industries/Industries";
 import Card from "../components/Industries/Card";
+import D6Process from "../components/6DProcess/D6Process";
+import WhyNeuSpaarx from "../components/WhyNeuSpaarx/WhyNeuSpaarx";
 
 function Layout() {
   return (
     <div className="flex flex-col min-h-screen relative">
       <Home />
+      <D6Process />
+      <WhyNeuSpaarx />
       <AboutUs />
       <WeFocusOn />
       <Services />
-      <Industries />
+      {/* <Industries /> */}
       <ContactUs />
       <Footer />
     </div>
