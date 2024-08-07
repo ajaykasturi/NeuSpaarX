@@ -12,7 +12,7 @@ function ContactUs() {
         Contact Us
       </div>
       <div className="flex justify-center gap-x-2 max-[900px]:flex-col max-[900px]:gap-y-6">
-        <div className="flex flex-col gap-y-8 flex-shrink grow-[1]">
+        <div className="flex flex-col gap-y-8 grow w-full">
           <div className="flex flex-col gap-y-2">
             <div className="text-xl font-semibold">
               Contact for Premium Business Services
@@ -25,7 +25,7 @@ function ContactUs() {
           </div>
           <Address />
         </div>
-        <form className="flex flex-col p-9 gap-y-9 rounded-lg bg-formBg grow-[5] w-full">
+        <form className="flex flex-col p-9 gap-y-9 rounded-lg bg-formBg  grow w-full">
           <div className="flex flex-col gap-y-1">
             <Label label={"Your Name"} name="fullname" />
             <Input placeholder={"John Doe"} type="text" />

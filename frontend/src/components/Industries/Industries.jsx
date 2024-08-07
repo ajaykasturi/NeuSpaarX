@@ -30,7 +30,11 @@ function Industries() {
       </div>
       <div className="flex gap-x-6 mt-8 justify-center">
         {config.map((card) => (
-          <Card key={card.id} card={card} />
+          <Card
+            key={card.id}
+            card={card}
+            className={"transition ease-in-out hover:scale-105 duration-500"}
+          />
         ))}
       </div>
     </div>
