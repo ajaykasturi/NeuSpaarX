@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontSize: {
-        headingClamp: "clamp(1rem, 5vw, 3rem)",
+        headingClamp: "clamp(2rem, 2vw + 2rem, 6rem);",
+        contentClamp: "clamp(0.9rem, 1vw + 0.6rem, 1.5rem);",
       },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],

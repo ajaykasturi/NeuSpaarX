@@ -11,6 +11,7 @@ import Industries from "../components/Industries/Industries";
 import Card from "../components/Industries/Card";
 import D6Process from "../components/6DProcess/D6Process";
 import WhyNeuSpaarx from "../components/WhyNeuSpaarx/WhyNeuSpaarx";
+import WhoWeAre from "../components/AboutUs/WhoWeAre";
 
 function Layout() {
   return (
@@ -18,10 +19,11 @@ function Layout() {
       <Home />
       <D6Process />
       <WhyNeuSpaarx />
+      <WhoWeAre />
       <AboutUs />
       <WeFocusOn />
       <Services />
-      {/* <Industries /> */}
+      <Industries />
       <ContactUs />
       <Footer />
     </div>

@@ -5,19 +5,19 @@ import moto from "../../assets/images/whyneuspaaxmoto.png";
 function WhyNeuSpaarx() {
   return (
     <div className="flex flex-col rounded-3xl my-8 items-center relative">
-      <div className="flex items-center justify-between w-full px-20 gap-x-12 absolute z-10">
-        <div className="text-[#1B2C59] text-5xl font-normal font-Poppins">
-          Why NeuSpaarX?
-        </div>
-        <div className="w-[30rem] h-[22rem] rounded-3xl">
-          <img src={moto} className="w-full h-full rounded-3xl" />
-        </div>
-      </div>
       <div className="flex flex-col gap-y-16 bg-whyBg bg-no-repeat bg-cover px-16 py-20 rounded-3xl mt-52">
-        <div className="text-2xl font-Poppins w-[60%] tracking-wide">
-          Delivering real value for your business is our goal. Our experienced
-          team develops reliable, scalable solutions using the latest
-          technologies.
+        <div className="flex flex-col w-full  gap-y-12">
+          <div className="text-[#1B2C59] text-5xl font-normal font-Poppins">
+            Why NeuSpaarX?
+          </div>
+          <div className="text-2xl font-Poppins w-[60%] tracking-wide">
+            Delivering real value for your business is our goal. Our experienced
+            team develops reliable, scalable solutions using the latest
+            technologies.
+          </div>
+          {/* <div className="w-[35rem] rounded-3xl">
+            <img src={moto} className="w-full h-full rounded-3xl" />
+          </div> */}
         </div>
         <div className="flex flex-col gap-y-10 text-2xl font-Poppins">
           <div className="flex gap-x-10">

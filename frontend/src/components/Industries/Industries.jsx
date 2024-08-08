@@ -16,9 +16,21 @@ function Industries() {
       content:
         "We understand that small businesses have tremendous potential. With the power of AI, data science, analytics and machine learning, we can help small businesses accelerate their growth and expansion. Whether it’s through automating routine tasks or providing data-driven insights we will help small businesses grow.",
     },
+    {
+      id: 3,
+      title: "Medium Scale",
+      content:
+        "NeuSpaarX offers various services depending on the unique needs of a Medium Scale Business including Custom Software Development, Mobile and Web apps, Cloud-based solutions, Business Intelligence and Analytics, Cybersecurity solutions, IT consulting services and Digital Marketing solutions to make the informed decisions and grow their business.",
+    },
+    {
+      id: 4,
+      title: "Large Scale",
+      content:
+        "We understand the requirements and offers tailer made solutions to the large scale business. Our key services include Mobile and Web App development, Custom Software Development, Enterprise Software Integration, Cloud Computing Solutions, Data Analytics and Business Intelligence and Digital Transformation Consulting.",
+    },
   ];
   return (
-    <div className="flex flex-col px-20 py-24 gap-y-8">
+    <div className="flex flex-col px-[5vw] py-24 gap-y-8">
       <div className="text-6xl font-Poppins font-normal">Industries</div>
       <div className="flex justify-between items-center gap-x-8 max-[690px]:flex-col max-[690px]:gap-y-4">
         <div className="font-Poppins text-xl text-justify">
@@ -28,7 +40,7 @@ function Industries() {
         </div>
         <Button name={"Know More"} />
       </div>
-      <div className="flex gap-x-6 mt-8 justify-center">
+      <div className="grid grid-cols-2 gap-12 justify-items-center self-center">
         {config.map((card) => (
           <Card
             key={card.id}
