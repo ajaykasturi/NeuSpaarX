@@ -30,17 +30,17 @@ function Industries() {
     },
   ];
   return (
-    <div className="flex flex-col px-[5vw] py-24 gap-y-8">
+    <div className="flex flex-col px-[5vw] py-24 gap-y-8 items-center md:items-start">
       <div className="text-6xl font-Poppins font-normal">Industries</div>
       <div className="flex justify-between items-center gap-x-8 max-[690px]:flex-col max-[690px]:gap-y-4">
-        <div className="font-Poppins text-xl text-justify">
+        <div className="font-Poppins text-xl tracking-wide text-center sm:text-left">
           We support all kinds of businesses for their growth using data
           analysis, data management, cloud computing, data visualization and
           many data related technologies regardless of business size.
         </div>
         <Button name={"Know More"} />
       </div>
-      <div className="grid grid-cols-2 gap-12 justify-items-center self-center">
+      <div className="grid grid-cols-1 gap-8  lg:grid-cols-2 lg:gap-10 xl:gap-12 justify-items-center self-center">
         {config.map((card) => (
           <Card
             key={card.id}

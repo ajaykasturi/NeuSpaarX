@@ -2,7 +2,7 @@ import React from "react";
 import aboutBg from "../../assets/images/aboutus.png";
 function AboutUs() {
   return (
-    <div className="flex gap-x-24 justify-between mx-20 max-[1050px]:flex-col max-[1050px]:gap-y-10 max-[1050px]:items-center">
+    <div className="flex gap-x-24 justify-between mx-[5vw] my-10 max-[1050px]:flex-col max-[1050px]:gap-y-10 max-[1050px]:items-center">
       <div className="rounded-2xl min-[650px]:w-[28rem] min-[1051px]:h-[35rem]  min-[1051px]:min-w-fit">
         <img
           src={aboutBg}

@@ -19,9 +19,11 @@ function Layout() {
       <Home />
       <D6Process />
       <WhyNeuSpaarx />
+      <WeFocusOn />
+
+      {/* responsiveness completed for below components */}
       <WhoWeAre />
       <AboutUs />
-      <WeFocusOn />
       <Services />
       <Industries />
       <ContactUs />
