@@ -3,10 +3,8 @@ import logo from "../../assets/images/neuspaarxlogo.png";
 import { ChevronDown, EllipsisVertical } from "lucide-react";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState("");
-  const activeLinkStyles = {};
   const navConfig = [
-    { name: "Home", link: "/", styles: "max-[600px]:hidden" },
+    { name: "Home", link: "", styles: "max-[600px]:hidden" },
     { name: "About", link: "about", styles: "max-[700px]:hidden" },
     {
       name: "Services",
@@ -32,9 +30,6 @@ const Navbar = () => {
       styles: "hidden max-[1200px]:block",
     },
   ];
-  function handleLink(link) {
-    setActiveLink(link);
-  }
   return (
     <header className="flex justify-between px-10 py-6 w-full">
       <NavLink to="/" className="h-12" onClick={() => handleLink("")}>
@@ -42,18 +37,19 @@ const Navbar = () => {
       </NavLink>
       <nav className="flex gap-x-1 justify-center items-center">
         {navConfig.map((item) => (
-          <a
-            href={`#${item.link}`}
+          <NavLink
+            to={`/${item.link}`}
             key={item.name}
-            className={`flex items-center px-5 py-2 rounded-full ${
-              item.styles ? item.styles : ""
-            } ${
-              activeLink === item.link ? "underline" : "no-underline"
-            } hover:underline hover:bg-[#274797] hover:text-white text-nowrap grow shrink`}
-            onClick={() => handleLink(item.link)}
+            className={({ isActive }) =>
+              `flex items-center px-5 py-2 rounded-full ${
+                item.styles ? item.styles : ""
+              } ${
+                isActive ? "underline" : "no-underline"
+              }  hover:bg-[#274797] hover:text-white text-nowrap grow shrink`
+            }
           >
             {item.name} {item.icon ? <span>{item.icon} </span> : ""}
-          </a>
+          </NavLink>
         ))}
       </nav>
     </header>

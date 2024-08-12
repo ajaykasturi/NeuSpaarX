@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar/Navbar";
-import Home from "../pages/Home";
+import Home from "../pages/HomePage";
 import Footer from "../components/Footer/Footer";
 import WeFocusOn from "../components/WeFocusOn/WeFocusOn";
 import AboutUs from "../components/AboutUs/AboutUs";
@@ -12,21 +12,18 @@ import Card from "../components/Industries/Card";
 import D6Process from "../components/6DProcess/D6Process";
 import WhyNeuSpaarx from "../components/WhyNeuSpaarx/WhyNeuSpaarx";
 import WhoWeAre from "../components/AboutUs/WhoWeAre";
-
-function Layout() {
+import { useLocation } from "react-router-dom";
+function Layout({ children }) {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className="flex flex-col min-h-screen relative">
-      <Home />
-      <D6Process />
-      <WhyNeuSpaarx />
-      <WeFocusOn />
-
-      {/* responsiveness completed for below components */}
+      {/* <D6Process />
       <WhoWeAre />
-      <AboutUs />
-      <Services />
-      <Industries />
-      <ContactUs />
+      <WhyNeuSpaarx /> */}
+      <div className="grow">{children}</div>
       <Footer />
     </div>
   );

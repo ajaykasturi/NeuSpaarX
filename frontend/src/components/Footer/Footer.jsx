@@ -8,7 +8,7 @@ import Address from "./Address";
 function Footer() {
   return (
     <footer
-      className={`flex flex-col gap-y-6 w-full px-10 py-8 bg-footer-bg bg-no-repeat bg-cover max-[899px]:items-center`}
+      className={`flex flex-col gap-y-6 w-full px-10 py-8 bg-footer-bg bg-no-repeat bg-cover max-[899px]:items-center justify-self-end`}
     >
       <div className="flex max-[899px]:flex-col gap-12 grow flex-row max-[899px]:items-center">
         <div className="flex flex-col gap-y-6 items-start shrink-0 grow">

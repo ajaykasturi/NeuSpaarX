@@ -6,7 +6,7 @@ import MissionVisionCard from "./MissionVisionCard";
 function WhoWeAre() {
   return (
     <>
-      <div className="flex flex-col min-h-svh relative items-center">
+      <div className="flex flex-col min-h-dvh relative items-center">
         <div className="absolute -z-10 w-full h-full">
           <img src={bgImgHome} className="w-full h-full" />
         </div>
