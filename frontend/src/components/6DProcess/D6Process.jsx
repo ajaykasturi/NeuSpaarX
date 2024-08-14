@@ -50,8 +50,8 @@ function D6Process() {
         Our 6-D Process
       </div>
       <div className="flex flex-col gap-y-16 relative">
-        {config.map((card) => (
-          <D6Card key={card.id} card={card} />
+        {config.map((card, index) => (
+          <D6Card key={card.id} card={card} top={index} />
         ))}
       </div>
     </div>
