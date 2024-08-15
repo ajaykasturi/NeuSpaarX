@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      scale: {
+        min500: "500px",
+      },
       fontSize: {
         headingClamp: "clamp(2rem, 2vw + 2rem, 6rem);",
         contentClamp: "clamp(0.9rem, 1vw + 0.6rem, 1.5rem);",
@@ -14,6 +17,7 @@ export default {
         appcolor: "#0C1F50",
         "focuscard-bg": "#F6F6F6",
         companycolor: "#274797",
+        colorblue: "#1B2C59",
       },
       backgroundImage: {
         "footer-bg": "url('./src/assets/images/footer-bg.png')",
@@ -32,9 +36,20 @@ export default {
             transform: "translateX(calc(-50% - 2rem))",
           },
         },
+        mobileSlide: {
+          "100%": {
+            transform: "translateX(calc(-50% - 0.5rem))",
+          },
+        },
       },
       animation: {
         autoScrollInfinite: "slide 20s infinite linear",
+        autoScrollInfinite10: "slide 10s infinite linear",
+        autoScrollInfinite15: "slide 15s infinite linear",
+        autoScrollInfinite20: "slide 20s infinite linear",
+        autoScrollInfiniteMobile10: "mobileSlide 10s infinite linear",
+        autoScrollInfiniteMobile15: "mobileSlide 15s infinite linear",
+        autoScrollInfiniteMobile20: "mobileSlide 20s infinite linear",
       },
     },
   },

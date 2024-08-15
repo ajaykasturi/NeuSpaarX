@@ -14,7 +14,7 @@ export default function Carousel() {
   );
   useEffect(() => {
     if (emblaApi) {
-      console.log(emblaApi.slideNodes()); // Access API
+      // Access API
     }
   }, [emblaApi]);
   const scrollPrev = useCallback(() => {
@@ -26,9 +26,9 @@ export default function Carousel() {
   }, [emblaApi]);
   return (
     <div className="flex flex-col gap-y-2 relative">
-      <div class="w-full overflow-hidden" ref={emblaRef}>
-        <div class="flex w-full  gap-x-2 h-[40rem]">
-          <div class="w-full flex flex-col items-center rounded-[0.9375rem] [flex:0_0_100%]">
+      <div className="w-full overflow-hidden" ref={emblaRef}>
+        <div className="flex w-full  gap-x-2 h-[40rem]">
+          <div className="w-full flex flex-col items-center rounded-[0.9375rem] [flex:0_0_100%]">
             <div className="flex items-center justify-end gap-x-20 self-stretch">
               <div className="text-9xl pl-10 font-light">
                 Unleash the <br /> Power of{" "}
@@ -39,7 +39,7 @@ export default function Carousel() {
               </div>
             </div>
           </div>
-          <div class="flex justify-end gap-6 px-10 items-center w-full rounded-[0.9375rem] [flex:0_0_100%]">
+          <div className="flex justify-end gap-6 px-10 items-center w-full rounded-[0.9375rem] [flex:0_0_100%]">
             <div className="flex flex-col gap-y-4 items-center">
               <div className="flex flex-col gap-y-6">
                 <div className="font-Poppins text-6xl font-semibold inline-block">
@@ -55,7 +55,7 @@ export default function Carousel() {
               <img src={powerbi} className="h-full w-full object-cover" />
             </div>
           </div>
-          <div class="flex flex-col justify-center items-center w-full p-8 [flex:0_0_100%] mr-2">
+          <div className="flex flex-col justify-center items-center w-full p-8 [flex:0_0_100%] mr-2">
             <div className="flex justify-evenly items-center gap-x-8 self-stretch">
               <div className="h-[30rem]">
                 <img src={ds} className="w-full h-full" />

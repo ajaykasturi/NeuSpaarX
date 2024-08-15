@@ -25,7 +25,7 @@ function Sidebar() {
   };
   return (
     <motion.div
-      className="absolute right-0 top-0 bottom-0 flex flex-col items-center justify-center text-black h-screen"
+      className="absolute z-20 right-0 top-0 bottom-0 flex flex-col items-center justify-center text-black h-screen"
       animate={open ? "open" : "closed"}
     >
       <motion.div

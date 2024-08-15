@@ -5,6 +5,7 @@ import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import IndustriesPage from "./pages/IndustriesPage";
+import DevOpsPage from "./pages/ServicePages/DevOpsPage";
 function App() {
   return (
     <Routes>
@@ -38,6 +39,22 @@ function App() {
           <Layout>
             <IndustriesPage />
           </Layout>
+        }
+      />
+      <Route
+        path="devops"
+        element={
+          <Layout>
+            <DevOpsPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="*"
+        element={
+          <div className="flex items-center justify-center h-screen text-6xl">
+            Oops! 404 Error
+          </div>
         }
       />
     </Routes>
