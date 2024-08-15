@@ -4,8 +4,8 @@ import Card from "./Card";
 import moto from "../../assets/images/whyneuspaaxmoto.png";
 function WhyNeuSpaarx() {
   return (
-    <div className="flex flex-col rounded-3xl my-8 items-center relative">
-      <div className="flex flex-col gap-y-16 bg-whyBg bg-no-repeat bg-cover px-16 py-20 rounded-3xl mt-52">
+    <div className="flex flex-col rounded-3xl mb-8 items-center relative">
+      <div className="flex flex-col gap-y-16 bg-whyBg bg-no-repeat bg-cover px-16 py-20 rounded-3xl">
         {/* <div className="flex flex-col w-full">
           <div className="text-[#1B2C59] text-5xl font-normal font-Poppins">
             Why NeuSpaarX?

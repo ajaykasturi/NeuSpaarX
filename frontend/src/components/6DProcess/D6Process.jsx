@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import D6Card from "./D6Card";
 import defineImg from "../../assets/6DProcessImages/define.png";
 import developImg from "../../assets/6DProcessImages/develop.png";
 import designImg from "../../assets/6DProcessImages/design.png";
 import deployImg from "../../assets/6DProcessImages/deploy.png";
 import deliverImg from "../../assets/6DProcessImages/deliver.png";
+import { motion, useScroll, useTransform } from "framer-motion";
 function D6Process() {
   const config = [
     {
@@ -44,15 +45,49 @@ function D6Process() {
       img: deliverImg,
     },
   ];
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start start", "end end"],
+  });
+  const { scrollYProgress: headingScroll } = useScroll({
+    target: container,
+    offset: ["start end", "end center"],
+  });
+  const scale = useTransform(headingScroll, [0, 1], [1, 0]);
+  const [isVisible, setIsVisible] = useState(true);
+  useEffect(() => {
+    headingScroll.on("change", (e) => {
+      console.log(headingScroll.current);
+      headingScroll.current == 1
+        ? setIsVisible((prev) => false)
+        : setIsVisible(true);
+    });
+  }, []);
   return (
-    <div className="flex flex-col gap-y-16  mx-[8vw] my-16  relative">
-      <div className="text-[#1B2C59] text-6xl font-Poppins text-center sticky top-10">
+    <div className="flex flex-col gap-y-2 mt-16 ">
+      <motion.div
+        className="text-[#1B2C59] text-6xl font-Poppins text-center sticky top-20"
+        style={{
+          display: !isVisible ? "none" : "block",
+        }}
+      >
         Our 6-D Process
-      </div>
-      <div className="flex flex-col gap-y-16 relative">
-        {config.map((card, index) => (
-          <D6Card key={card.id} card={card} top={index} />
-        ))}
+      </motion.div>
+      <div className="flex flex-col gap-y-16" ref={container}>
+        {config.map((card, index) => {
+          const targetScale = 1 - (config.length - index) * 0.05;
+          return (
+            <D6Card
+              key={card.id}
+              card={card}
+              i={index}
+              range={[index * 0.25, 1]}
+              targetScale={targetScale}
+              progress={scrollYProgress}
+            />
+          );
+        })}
       </div>
     </div>
   );
