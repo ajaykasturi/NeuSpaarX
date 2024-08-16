@@ -13,9 +13,14 @@ function LetsConnect() {
         </div>
       </div>
 
-      <Button name="Contact Us" onClick={() => navigate("/contact-us")} />
+      <Button
+        name="Contact Us"
+        clasName="hover:scale-[1.02]"
+        onClick={() => navigate("/contact-us")}
+      />
     </div>
   );
 }
 
 export default LetsConnect;
+  
