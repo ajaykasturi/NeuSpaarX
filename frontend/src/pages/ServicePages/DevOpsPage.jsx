@@ -38,8 +38,8 @@ function DevOpsPage() {
       </div>
       <ToolsTechnologies />
       {/* <SevenCycles /> */}
-      {/*
-      <OurExpertise /> */}
+
+      <OurExpertise />
       <LetsConnect />
     </>
   );
