@@ -20,8 +20,8 @@ export default {
         colorblue: "#1B2C59",
       },
       backgroundImage: {
-        "footer-bg": "url('./src/assets/images/footer-bg.png')",
-        "wefocuson-bg": "url('./src/assets/images/bg-wefocuson.png')",
+        footerBg: "url('./src/assets/images/footer-bg.png')",
+        wefocusonBg: "url('./src/assets/images/bg-wefocuson.png')",
         borderImg:
           "linear-gradient(white, rgb(255, 255, 255)) padding-box, linear-gradient(to right,rgba(255, 255, 255, 1),rgba(39, 71, 151, 1))border-box",
         servicesBg: "url('./src/assets/images/servicesbg.png')",

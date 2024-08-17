@@ -28,7 +28,7 @@ function DevOpsPage() {
             </div>
             <Button
               name="Contact Us"
-              styles="px-6 py-3 text-[1rem] lg:text-[1.3rem]"
+              styles="px-4 py-2 lg:px-6 lg:py-3 text-[1rem] lg:text-[1.2rem]"
             />
           </div>
           <div className="w-full h-full">
