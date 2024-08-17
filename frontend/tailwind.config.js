@@ -20,15 +20,15 @@ export default {
         colorblue: "#1B2C59",
       },
       backgroundImage: {
-        footerBg: "url('./src/assets/images/footer-bg.png')",
-        wefocusonBg: "url('./src/assets/images/bg-wefocuson.png')",
+        footerBg: "url('/src/assets/images/footer-bg.png')",
+        wefocusonBg: "url('/src/assets/images/bg-wefocuson.png')",
         borderImg:
           "linear-gradient(white, rgb(255, 255, 255)) padding-box, linear-gradient(to right,rgba(255, 255, 255, 1),rgba(39, 71, 151, 1))border-box",
-        servicesBg: "url('./src/assets/images/servicesbg.png')",
-        mainBgImg: "url('./src/assets/images/bgimg.png')",
+        servicesBg: "url('/src/assets/images/servicesbg.png')",
+        mainBgImg: "url('/src/assets/images/bgimg.png')",
         formBg: "linear-gradient(156deg, #D0D0D015.14%, #EAEAEA91.23%)",
         D6Img: "linear-gradient(133deg, #F4F4F4 30.87%, #E1E1E1 70.65%)",
-        whyBg: "url('./src/assets/images/whyneusparxbg.png')",
+        whyBg: "url('/src/assets/images/whyneusparxbg.png')",
       },
       keyframes: {
         slide: {
