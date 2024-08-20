@@ -28,8 +28,8 @@ function ToolsTechnologies() {
       </div>
       <div className="py-4 overflow-hidden whitespace-nowrap w-full relative overlay after-overlay before-overlay  border-0 hover:[animation-play-state:paused]">
         <div className="flex gap-x-16 max-[500px]:gap-x-4 hover:[animation-play-state:paused] w-max max-[500px]:animate-autoScrollInfiniteMobile10 min-[501px]:animate-autoScrollInfinite10">
-          {techConfig.map((item) => (
-            <TechCard item={item} key={item.id} />
+          {techConfig.map((item, index) => (
+            <TechCard item={item} key={`${item.id}|${index}`} />
           ))}
         </div>
       </div>

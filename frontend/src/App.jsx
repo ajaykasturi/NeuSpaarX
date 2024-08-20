@@ -6,6 +6,8 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import IndustriesPage from "./pages/IndustriesPage";
 import DevOpsPage from "./pages/ServicePages/DevOpsPage";
+import WordPressPage from "./pages/ServicePages/WordPressPage";
+import PowerAppsPage from "./pages/ServicePages/PowerAppsPage";
 function App() {
   return (
     <Routes>
@@ -46,6 +48,22 @@ function App() {
         element={
           <Layout>
             <DevOpsPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="wordpress"
+        element={
+          <Layout>
+            <WordPressPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="powerapps"
+        element={
+          <Layout>
+            <PowerAppsPage />
           </Layout>
         }
       />

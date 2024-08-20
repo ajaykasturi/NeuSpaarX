@@ -20,7 +20,7 @@ function OurExpertise() {
       </div>
       <div className="place-items-center grid grid-cols-1 gap-y-5 min-[680px]:grid-cols-2 min-[680px]:gap-4 min-[750px]:gap-8 min-[850px]:gap-12 lg:gap-12">
         {config.map((card) => (
-          <ExpertiseCard card={card} />
+          <ExpertiseCard card={card} key={card.id} />
         ))}
       </div>
     </div>
