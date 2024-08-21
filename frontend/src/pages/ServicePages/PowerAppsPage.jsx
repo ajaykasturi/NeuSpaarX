@@ -2,6 +2,7 @@ import React from "react";
 import ServicesLanding from "../../components/Services/ServicesLanding";
 import powerapps from "../../assets/images/powerapps.png";
 import LetsConnect from "../../components/ContactUs/LetsConnect";
+import PowerAppsIntro from "../../components/Services/PowerApps/PowerAppsIntro";
 function PowerAppsPage() {
   return (
     <>
@@ -11,6 +12,7 @@ function PowerAppsPage() {
         btnText={"Contact Us"}
         sideImg={powerapps}
       />
+      <PowerAppsIntro />
       <LetsConnect />
     </>
   );

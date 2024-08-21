@@ -12,6 +12,7 @@ export default {
       },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
+        Roboto: ["Roboto", "sans-serif"],
       },
       colors: {
         appcolor: "#0C1F50",
