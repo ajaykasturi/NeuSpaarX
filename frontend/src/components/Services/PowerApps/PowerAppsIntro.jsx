@@ -32,7 +32,7 @@ function PowerAppsIntro() {
     <div className="mx-[4vw] my-20 flex flex-col gap-y-6">
       <div className="flex flex-col gap-y-5 sm:gap-y-6">
         <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-Poppins font-medium text-colorblue text-center sm:text-left">
-          Build your PowerApps application with us
+          Build your Power Apps application with us
         </div>
         <div className="text-base sm:text-xl md:text-[1.3rem] lg:text-2xl font-Poppins font-normal text-center sm:text-left">
           Simplify Your Business Processes in Four Steps

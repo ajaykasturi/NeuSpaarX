@@ -7,7 +7,7 @@ function PowerAppsPage() {
   return (
     <>
       <ServicesLanding
-        title={"PowerApps"}
+        title={"Power Apps"}
         content={"Empower Your Business with Custom Apps, No Coding Required"}
         btnText={"Contact Us"}
         sideImg={powerapps}
