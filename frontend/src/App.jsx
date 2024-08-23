@@ -8,6 +8,7 @@ import IndustriesPage from "./pages/IndustriesPage";
 import DevOpsPage from "./pages/ServicePages/DevOpsPage";
 import WordPressPage from "./pages/ServicePages/WordPressPage";
 import PowerAppsPage from "./pages/ServicePages/PowerAppsPage";
+import PowerAutomatePage from "./pages/ServicePages/PowerAutomatePage";
 function App() {
   return (
     <Routes>
@@ -64,6 +65,14 @@ function App() {
         element={
           <Layout>
             <PowerAppsPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="power-automate"
+        element={
+          <Layout>
+            <PowerAutomatePage />
           </Layout>
         }
       />
