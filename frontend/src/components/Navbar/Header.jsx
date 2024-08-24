@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import logo from "../../assets/images/neuspaarxlogo.png";
+import logo from "../../assets/neuspaarx/neuspaarxlogo.png";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import SideBarMain from "../SideBarMain.jsx/SideBarMain";
