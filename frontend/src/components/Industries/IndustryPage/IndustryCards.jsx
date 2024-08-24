@@ -43,7 +43,7 @@ function IndustryCards() {
   return (
     <div className="flex flex-col items-center my-20 gap-y-6">
       {cardConfig.map((card) => (
-        <IndustryPageCard card={card} />
+        <IndustryPageCard key={card.id} card={card} />
       ))}
     </div>
   );

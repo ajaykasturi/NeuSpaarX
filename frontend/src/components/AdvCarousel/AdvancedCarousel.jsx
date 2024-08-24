@@ -5,7 +5,7 @@ function AdvancedCarousel({
   autoSlide = false,
   autoSlideInterval = 3000,
 }) {
-  const slides = [slidesOrg[slidesOrg.length - 1], ...slidesOrg, slidesOrg[0]];
+  const slides = [...slidesOrg];
   const [currIndex, setCurrIndex] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
 

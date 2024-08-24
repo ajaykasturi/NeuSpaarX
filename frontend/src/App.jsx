@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "./layout/Layout";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -9,6 +9,8 @@ import DevOpsPage from "./pages/ServicePages/DevOpsPage";
 import WordPressPage from "./pages/ServicePages/WordPressPage";
 import PowerAppsPage from "./pages/ServicePages/PowerAppsPage";
 import PowerAutomatePage from "./pages/ServicePages/PowerAutomatePage";
+import Error404 from "./pages/ErrorPages/Error404";
+import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <Routes>
@@ -37,6 +39,20 @@ function App() {
         }
       />
       <Route
+        path="services"
+        element={
+          <Layout>
+            <Outlet />
+          </Layout>
+        }
+      >
+        <Route index element={<DevOpsPage />} />
+        <Route path="devops" element={<DevOpsPage />} />
+        <Route path="wordpress" element={<WordPressPage />} />
+        <Route path="powerapps" element={<PowerAppsPage />} />
+        <Route path="power-automate" element={<PowerAutomatePage />} />
+      </Route>
+      <Route
         path="industries"
         element={
           <Layout>
@@ -44,44 +60,14 @@ function App() {
           </Layout>
         }
       />
-      <Route
-        path="devops"
-        element={
-          <Layout>
-            <DevOpsPage />
-          </Layout>
-        }
-      />
-      <Route
-        path="wordpress"
-        element={
-          <Layout>
-            <WordPressPage />
-          </Layout>
-        }
-      />
-      <Route
-        path="powerapps"
-        element={
-          <Layout>
-            <PowerAppsPage />
-          </Layout>
-        }
-      />
-      <Route
-        path="power-automate"
-        element={
-          <Layout>
-            <PowerAutomatePage />
-          </Layout>
-        }
-      />
+
       <Route
         path="*"
         element={
-          <div className="flex items-center justify-center h-screen text-6xl">
-            Oops! 404 Error
-          </div>
+          <Layout>
+            <Navbar />
+            <Error404 />
+          </Layout>
         }
       />
     </Routes>

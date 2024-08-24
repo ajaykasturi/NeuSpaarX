@@ -33,7 +33,7 @@ function Contact() {
         </div>
         <div className="flex flex-col items-center gap-8 min-[899px]:flex-row min-[899px]:justify-evenly">
           {contactInfo.map((item) => (
-            <div className="flex flex-col items-center justify-center gap-y-4">
+            <div key={item.name} className="flex flex-col items-center justify-center gap-y-4">
               <div>{item.icon}</div>
               <div className="text-2xl font-semibold font-Poppins text-center">
                 {item.name}

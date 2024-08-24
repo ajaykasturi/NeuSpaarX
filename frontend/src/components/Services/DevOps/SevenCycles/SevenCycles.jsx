@@ -47,6 +47,11 @@ function SevenCycles() {
         "We ensure systems are always up and running efficiently, addressing any issues immediately to maintain uninterrupted service.",
     },
   ];
+  const devopsConfigDup = [
+    devopsConfig[devopsConfig.length - 1],
+    ...devopsConfig,
+    devopsConfig[0],
+  ];
   return (
     <div className="mx-[5vw] my-10 flex flex-col gap-y-8 sm:gap-y-20 items-center justify-center lg:h-screen">
       <div className="text-headingClamp text-colorblue text-center">
@@ -58,9 +63,12 @@ function SevenCycles() {
         </div>
         <div className="w-full flex justify-center">
           <AdvancedCarousel autoSlide={false} autoSlideInterval={2000}>
-            {devopsConfig.map((item, index) => (
-              <div className="min-w-full flex justify-center">
-                <CycleCard card={item} key={`${item.id}|${index}`} />
+            {devopsConfigDup.map((item, index) => (
+              <div
+                className="min-w-full flex justify-center"
+                key={`${item.id}|${index}`}
+              >
+                <CycleCard card={item} />
               </div>
             ))}
           </AdvancedCarousel>

@@ -35,7 +35,7 @@ function PowerAutomateTools() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-12 lg:gap-16">
         {config.map((item) => (
-          <ToolCard card={item} />
+          <ToolCard key={item.id} card={item} />
         ))}
       </div>
     </div>

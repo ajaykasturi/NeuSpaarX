@@ -41,6 +41,7 @@ function PowerAppsIntro() {
       <div className="flex flex-col max-[500px]:gap-y-5">
         {config.map((item, index) => (
           <PowerCard
+            key={item.id}
             card={item}
             className={`${index % 2 == 0 ? "" : "flex-row-reverse"}`}
           />
