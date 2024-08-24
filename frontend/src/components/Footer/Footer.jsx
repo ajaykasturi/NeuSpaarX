@@ -55,7 +55,8 @@ function Footer() {
       </div>
       <div className="h-[0.1875rem] bg-[#757575] self-stretch"></div>
       <div className="text-base font-normal">
-        Copyright © 2023 Neuspaarx, All Rights Reserved | Privacy Policy
+        Copyright © {new Date().getFullYear()} Neuspaarx, All Rights Reserved |
+        Privacy Policy
       </div>
     </footer>
   );
