@@ -37,7 +37,7 @@ function AdvancedCarousel({
     return () => clearInterval(slideInterval);
   }, [next]);
   return (
-    <div className="overflow-hidden relative min-[375px]:w-[19.6rem] min-[375px]:h-[14.7rem] min-[500px]:w-[22.4rem] min-[500px]:h-[16.8rem] min-[560px]:w-[25.2rem] min-[560px]:h-[18.9rem]  sm:w-[18rem] sm:h-[14rem] md:w-[19.6rem] md:h-[14.7rem] min-[800px]:w-[22.4rem] min-[800px]:[16.8rem] min-[900px]:w-[25.2rem] min-[900px]:h-[18.9rem] xl:h-[21rem] xl:w-[28rem]">
+    <div className="overflow-hidden relative min-[375px]:w-[19.6rem] min-[375px]:h-[14.7rem] min-[500px]:w-[22.4rem] min-[500px]:h-[16.8rem] min-[560px]:w-[25.2rem] min-[560px]:h-[18.9rem]  sm:w-[18rem] sm:h-[14rem] md:w-[19.6rem] md:h-[14.7rem] min-[800px]:w-[22.4rem] min-[800px]:[16.8rem] min-[900px]:w-[25.2rem] min-[900px]:h-[18.9rem] xl:h-[21rem] xl:w-[28rem] 2xl:h-[25.2rem] 2xl:w-[33.6rem]">
       <>
         <div
           onTransitionEnd={handleTransitionEnd}

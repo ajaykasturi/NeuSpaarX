@@ -5,12 +5,12 @@ import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 function ServicesLanding({ title, content, btnText, sideImg }) {
   return (
-    <div className="flex flex-col  sm:min-h-fit lg:min-h-dvh relative items-center">
+    <div className="flex flex-col  min-h-svh sm:min-h-fit lg:min-h-dvh relative items-center">
       <div className="absolute -z-10 w-full h-full">
         <img src={bgImgHome} className="w-full h-full" />
       </div>
       <Navbar />
-      <div className="grid grid-cols-1 sm:grid sm:grid-cols-2 items-center justify-items-center grow  gap-8 mx-[4vw] sm:pb-10">
+      <div className="grid grid-cols-1  sm:grid sm:grid-cols-2 items-center justify-items-center grow  gap-8 sm:pb-10 mx-[4vw] ">
         <div className="flex flex-col gap-y-8 items-center sm:items-start">
           <div className="text-[#1B2C59] flex flex-col gap-y-2 items-center text-center sm:items-start sm:text-left">
             <div className="text-[3rem] leading-tight sm:text-[3rem] md:text-[4rem] lg:text-[6rem] font-medium">
@@ -29,7 +29,7 @@ function ServicesLanding({ title, content, btnText, sideImg }) {
             </Link>
           )}
         </div>
-        <div className="w-full h-full">
+        <div className="w-full self-start sm:self-auto">
           <img src={sideImg} className="w-full h-full object-contain" />
         </div>
       </div>

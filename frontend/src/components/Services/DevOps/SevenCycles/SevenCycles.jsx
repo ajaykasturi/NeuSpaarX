@@ -58,10 +58,10 @@ function SevenCycles() {
         We follow the 7C's of DevOps
       </div>
       <div className="grid grid-cols-1 gap-x-2 sm:grid-cols-2 gap-y-4 items-center justify-items-center">
-        <div className="min-[375px]:h-[16rem]  min-[500px]:h-[20rem] sm:h-auto md:h-[20rem] lg:h-[25rem] xl:h-auto">
+        <div className="min-[375px]:h-[16rem]  min-[500px]:h-[20rem] sm:h-auto md:h-[20rem] lg:h-[25rem] xl:h-[33rem]">
           <img src={sevencycles} className="w-full h-full object-contain" />
         </div>
-        <div className="w-full flex justify-center">
+        <div className="w-full h-full items-center flex justify-center">
           <AdvancedCarousel autoSlide={false} autoSlideInterval={2000}>
             {devopsConfigDup.map((item, index) => (
               <div

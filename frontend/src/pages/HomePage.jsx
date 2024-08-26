@@ -11,7 +11,7 @@ import ContactUs from "../components/ContactUs/ContactUs";
 function Home() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col min-h-dvh  relative ">
+      <div className="flex flex-col h-dvh  relative">
         <div className="absolute -z-10 w-full h-full">
           <img src={bgImgHome} className="w-full h-full" />
         </div>

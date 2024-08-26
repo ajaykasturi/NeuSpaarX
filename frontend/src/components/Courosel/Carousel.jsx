@@ -25,9 +25,9 @@ export default function Carousel() {
     if (emblaApi) emblaApi.scrollNext();
   }, [emblaApi]);
   return (
-    <div className="flex flex-col gap-y-2 relative">
-      <div className="w-full overflow-hidden" ref={emblaRef}>
-        <div className="flex w-full  gap-x-2 h-[40rem]">
+    <div className="flex flex-col gap-y-2 relative h-full overflow-hidden">
+      <div className="w-full" ref={emblaRef}>
+        <div className="flex w-full gap-x-2">
           <div className="w-full flex flex-col items-center rounded-[0.9375rem] [flex:0_0_100%]">
             <div className="flex items-center justify-end gap-x-20 self-stretch">
               <div className="text-9xl pl-10 font-light">
@@ -70,7 +70,7 @@ export default function Carousel() {
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-between gap-x-2 absolute top-2/4">
+      <div className="flex w-full justify-between gap-x-2 absolute top-[45%]">
         <button
           className="hover:opacity-90 px-4 py-2 rounded-full"
           onClick={scrollPrev}
