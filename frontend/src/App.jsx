@@ -11,6 +11,7 @@ import PowerAppsPage from "./pages/ServicePages/PowerAppsPage";
 import PowerAutomatePage from "./pages/ServicePages/PowerAutomatePage";
 import Error404 from "./pages/ErrorPages/Error404";
 import Navbar from "./components/Navbar/Navbar";
+import Dynamic365Page from "./pages/ServicePages/Dynamic365Page";
 function App() {
   return (
     <Routes>
@@ -48,6 +49,7 @@ function App() {
       >
         <Route index element={<DevOpsPage />} />
         <Route path="devops" element={<DevOpsPage />} />
+        <Route path="dynamic-365" element={<Dynamic365Page />} />
         <Route path="wordpress" element={<WordPressPage />} />
         <Route path="powerapps" element={<PowerAppsPage />} />
         <Route path="power-automate" element={<PowerAutomatePage />} />
