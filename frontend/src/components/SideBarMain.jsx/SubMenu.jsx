@@ -15,7 +15,7 @@ function SubMenu({ item, isOpenMenu, setIsOpenMenu }) {
         onClick={item.subNav && handleToggle}
         to={`${item.subNav ? "#" : item.path}`}
         className={({ isActive }) =>
-          `hover:bg-[#274797] hover:text-white text-nowrap h-[60px] flex justify-start items-center gap-x-1 pl-8 my-1 rounded-xl ${
+          `hover:bg-[#3b5ab0] hover:text-white text-nowrap h-[60px] flex justify-start items-center gap-x-1 pl-8 my-1 rounded-xl ${
             isActive && !item.subNav ? "bg-[#274797] text-white" : ""
           }`
         }
@@ -36,7 +36,7 @@ function SubMenu({ item, isOpenMenu, setIsOpenMenu }) {
                   to={`${subitem.path}`}
                   key={subitem.name}
                   className={({ isActive }) =>
-                    `hover:bg-[#274797] hover:text-white text-nowrap h-[60px] flex justify-start items-center gap-x-1 pl-8 my-1 rounded-xl  ${
+                    `hover:bg-[#3b5ab0] hover:text-white text-nowrap h-[60px] flex justify-start items-center gap-x-1 pl-8 my-1 rounded-xl  ${
                       isActive ? "bg-[#274797] text-white" : ""
                     }`
                   }
