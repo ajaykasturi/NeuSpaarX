@@ -12,6 +12,7 @@ import PowerAutomatePage from "./pages/ServicePages/PowerAutomatePage";
 import Error404 from "./pages/ErrorPages/Error404";
 import Navbar from "./components/Navbar/Navbar";
 import Dynamic365Page from "./pages/ServicePages/Dynamic365Page";
+import PowerBiPage from "./pages/ServicePages/PowerBiPage";
 function App() {
   return (
     <Routes>
@@ -53,6 +54,7 @@ function App() {
         <Route path="wordpress" element={<WordPressPage />} />
         <Route path="powerapps" element={<PowerAppsPage />} />
         <Route path="power-automate" element={<PowerAutomatePage />} />
+        <Route path="power-bi" element={<PowerBiPage />} />
       </Route>
       <Route
         path="industries"
