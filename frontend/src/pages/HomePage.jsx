@@ -8,6 +8,7 @@ import WeFocusOn from "../components/WeFocusOn/WeFocusOn";
 import Services from "../components/Services/Services";
 import Industries from "../components/Industries/Industries";
 import ContactUs from "../components/ContactUs/ContactUs";
+import AgileComponent from "../components/AgileMethodology/AgileComponent";
 function Home() {
   return (
     <div className="flex flex-col">
@@ -20,6 +21,7 @@ function Home() {
       </div>
       <AboutUs />
       <WeFocusOn />
+      <AgileComponent />
       <Services />
       <Industries />
       <ContactUs />
