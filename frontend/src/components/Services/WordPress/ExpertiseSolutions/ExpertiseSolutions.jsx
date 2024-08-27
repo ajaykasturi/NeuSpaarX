@@ -1,5 +1,6 @@
 import React from "react";
 import ExpertiseCard from "./ExpertiseCard";
+import PowerCard from "../../PowerBi/PowerCard";
 
 function ExpertiseSolutions() {
   const config = [
@@ -7,7 +8,7 @@ function ExpertiseSolutions() {
       id: 1,
       title: "WordPress Hosting & Security",
       content:
-        "Keep your site fast, secure, and always available with our optimized WordPress hosting services. We provide robust security measures, including regular updates, malware scanning, and firewall configurations, to protect your site against threats and ensure reliability.",
+        "Ensure your site is fast, secure, and always online with our optimized WordPress hosting. We offer strong security measures, including regular updates, malware scanning, and firewall protection to safeguard your site and maintain its reliability.",
       icon: "",
     },
     {
@@ -48,12 +49,17 @@ function ExpertiseSolutions() {
   ];
   return (
     <div className="mx-[5vw] my-40 flex flex-col gap-y-9 sm:gap-y-16">
-      <h1 className="text-3xl min-[450px]:text-3xl sm:text-4xl md:text-5xl text-colorblue text-center sm:text-left">
+      <h1 className="text-3xl min-[450px]:text-3xl sm:text-4xl md:text-5xl text-colorblue text-center md:text-left">
         Expertise and Solutions
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-12 gap-8 xl:gap-20 place-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-[24rem_24rem] xl:grid-cols-[24rem_24rem_24rem] place-items-center gap-8 md:gap-x-0 min-[800px]:gap-x-8 place-content-center lg:gap-20 xl:gap-8 2xl:gap-20">
         {config.map((item) => (
-          <ExpertiseCard key={item.id} card={item} />
+          <PowerCard
+            h="h-[30rem]"
+            w="min-[376px]:w-[22rem]"
+            key={item.id}
+            card={item}
+          />
         ))}
       </div>
     </div>
