@@ -9,7 +9,7 @@ function SideBarMain() {
   return (
     <div
       className={`bg-[#ffffff] w-[350px] h-screen flex flex-col justify-start fixed ${
-        isSideBarOpen ? "left-0" : "-left-full"
+        isSideBarOpen ? "left-0" : "-left-full w-0"
       } top-0 z-50 transition-all duration-500 overflow-scroll no-scrollbar px-2 min-[1200px]:hidden`}
     >
       <div className="bg-transparent flex justify-end items-center pr-8 min-h-[65px] max-h-[65px] sm:min-h-[96px] sm:max-h-[96px] sticky top-0 ">
