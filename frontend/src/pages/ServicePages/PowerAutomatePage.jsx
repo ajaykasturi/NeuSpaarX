@@ -4,6 +4,7 @@ import powerautomateimg from "../../assets/images/powerautomate.png";
 import WhatPowerAutomate from "../../components/Services/PowerAutomate/WhatPowerAutomate/WhatPowerAutomate";
 import LetsConnect from "../../components/ContactUs/LetsConnect";
 import PowerAutomateTools from "../../components/Services/PowerAutomate/PowerAutomateTools/PowerAutomateTools";
+import PowerAutomateUseCases from "../../components/Services/PowerAutomate/UseCaseOfPowerAutomate/PowerAutomateUseCases";
 function PowerAutomatePage() {
   return (
     <>
@@ -15,6 +16,7 @@ function PowerAutomatePage() {
       />
       <WhatPowerAutomate />
       <PowerAutomateTools />
+      <PowerAutomateUseCases />
       <LetsConnect />
     </>
   );

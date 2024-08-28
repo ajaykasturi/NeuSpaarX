@@ -3,7 +3,7 @@ import React from "react";
 function PowerCard({ card, className = "" }) {
   return (
     <div
-      className={`${className} flex items-center justify-start gap-x-4 sm:gap-x-6 md:gap-x-12 lg:gap-x-16 xl:gap-x-20`}
+      className={`${className} transition-all ease-in-out hover:scale-[1.04] duration-500 flex items-center justify-start gap-x-4 sm:gap-x-6 md:gap-x-12 lg:gap-x-16 xl:gap-x-20`}
     >
       <div className="text-awesome text-[8rem] min-[550px]:text-[9rem] min-[600px]:text-[10rem] min-[650px]:text-[11rem] min-[700px]:text-[12rem] min-[750px]:text-[13rem] min-[800px]:text-[14rem] min-[850px]:text-[15rem] min-[900px]:text-[16rem] min-[1000px]:text-[17rem] lg:text-[18rem]  text-shadow-1">
         {card.id}

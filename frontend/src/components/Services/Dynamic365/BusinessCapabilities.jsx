@@ -13,9 +13,9 @@ function BusinessCapabilities() {
   ];
   return (
     <div className="bg-mainBgImg bg-no-repeat px-[5vw] bg-cover py-24 flex flex-col gap-y-10">
-      <div className="text-2xl min-[450px]:text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-center text-colorblue">
+      <h1 className="text-2xl min-[450px]:text-3xl sm:text-4xl md:text-5xl xl:text-6xl text-center text-colorblue">
         Unlock Key Business Capabilities
-      </div>
+      </h1>
       <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 place-items-center">
         <div className="flex flex-col gap-y-6">
           {config.map((item) => (
