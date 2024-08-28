@@ -58,7 +58,6 @@ function D6Process() {
   const [isVisible, setIsVisible] = useState(true);
   useEffect(() => {
     headingScroll.on("change", (e) => {
-      console.log(headingScroll.current);
       headingScroll.current == 1
         ? setIsVisible((prev) => false)
         : setIsVisible(true);

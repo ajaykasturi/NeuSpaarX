@@ -10,7 +10,6 @@ import WordPressPage from "./pages/ServicePages/WordPressPage";
 import PowerAppsPage from "./pages/ServicePages/PowerAppsPage";
 import PowerAutomatePage from "./pages/ServicePages/PowerAutomatePage";
 import Error404 from "./pages/ErrorPages/Error404";
-import Navbar from "./components/Navbar/Navbar";
 import Dynamic365Page from "./pages/ServicePages/Dynamic365Page";
 import PowerBiPage from "./pages/ServicePages/PowerBiPage";
 import DataIntegrationPage from "./pages/ServicePages/DataIntegrationPage";
@@ -71,7 +70,6 @@ function App() {
         path="*"
         element={
           <Layout>
-            <Navbar />
             <Error404 />
           </Layout>
         }

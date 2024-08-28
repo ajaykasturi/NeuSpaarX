@@ -1,10 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import logo from "../../assets/neuspaarx/neuspaarxlogo.png";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import SideBarMain from "../SideBarMain.jsx/SideBarMain";
 import ToggleButton from "../SideBarMain.jsx/ToggleButton";
 import { SideBarContext } from "../../context/SideBarProvider";
+import ServicesDropDown from "./ServicesDropDown";
+import ResourcesDropDown from "./ResourcesDropDown";
 export const navConfig = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
@@ -141,8 +143,23 @@ export const navConfig = [
     styles: "bg-[#274797] text-white",
   },
 ];
+
 const Header = () => {
   const { isSideBarOpen } = useContext(SideBarContext);
+  const [dropdown, setDropdown] = useState(null);
+  const handleClick = (e) => {
+    e.preventDefault();
+    console.log("Navigation is blocked!");
+  };
+  const handleMouseEnter = (name) => {
+    setDropdown(name);
+  };
+  const handleMouseLeave = () => {
+    setDropdown(null);
+  };
+  function handleDropDown(name) {
+    dropdown == null ? handleMouseEnter(name) : setDropdown(null);
+  }
   return (
     <>
       <header className="flex justify-between px-10 py-6 w-full">
@@ -151,19 +168,38 @@ const Header = () => {
         </NavLink>
         <nav className="flex gap-x-2 justify-center items-center">
           {navConfig.map((item) => (
-            <NavLink
-              to={`${item.path}`}
+            <div
               key={item.name}
-              className={({ isActive }) =>
-                `max-[1200px]:hidden flex items-center px-5 py-2 rounded-full ${
-                  item.styles ? item.styles : ""
-                } ${
-                  isActive ? "underline" : "no-underline"
-                }  hover:bg-[#274797] hover:text-white text-nowrap grow shrink`
-              }
+              onClick={() => handleDropDown(item.name)}
+              onMouseEnter={() => handleMouseEnter(item.name)}
+              onMouseLeave={handleMouseLeave}
+              className="relative"
             >
-              {item.name} {item.icon ? <span>{item.icon} </span> : ""}
-            </NavLink>
+              <NavLink
+                onClick={item.subNav ? handleClick : ""}
+                to={`${item.path}`}
+                className={({ isActive }) =>
+                  `max-[1200px]:hidden flex items-center px-5 py-2 rounded-full ${
+                    item.styles ? item.styles : ""
+                  } ${
+                    isActive ? "text-blue-700" : ""
+                  }  hover:border-[#274797] border-2 border-transparent text-nowrap grow shrink`
+                }
+              >
+                {item.name} {item.icon ? <span>{item.icon} </span> : ""}
+              </NavLink>
+              {/* Dropdown Menu */}
+              {item.subNav && dropdown === item.name && (
+                <div className="absolute left-1/2 transform -translate-x-1/2 top-[80%] z-10  bg-transparent transition-all">
+                  {item.path == "/services" && (
+                    <ServicesDropDown subNav={item.subNav} />
+                  )}
+                  {item.path === "/resources" && (
+                    <ResourcesDropDown subNav={item.subNav} />
+                  )}
+                </div>
+              )}
+            </div>
           ))}
           {!isSideBarOpen && (
             <ToggleButton className="hidden max-[1200px]:block" />
