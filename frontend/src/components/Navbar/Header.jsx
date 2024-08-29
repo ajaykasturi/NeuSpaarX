@@ -21,8 +21,8 @@ export const navConfig = [
         subNavHeading: "Data and Analytics",
         subitems: [
           {
-            name: "Data Engeneering",
-            path: "/services/data-engeneering",
+            name: "Data Engineering",
+            path: "/services/data-engineering",
           },
           {
             name: "Data Management",
@@ -182,15 +182,15 @@ const Header = () => {
                   `max-[1200px]:hidden flex items-center px-5 py-2 rounded-full ${
                     item.styles ? item.styles : ""
                   } ${
-                    isActive ? "text-blue-700" : ""
-                  }  hover:border-[#274797] border-2 border-transparent text-nowrap grow shrink`
+                    isActive ? "text-[#274797] font-semibold" : ""
+                  }  hover:border-[] border-2 border-transparent text-nowrap grow shrink`
                 }
               >
                 {item.name} {item.icon ? <span>{item.icon} </span> : ""}
               </NavLink>
               {/* Dropdown Menu */}
               {item.subNav && dropdown === item.name && (
-                <div className="absolute left-1/2 transform -translate-x-1/2 top-[80%] z-10  bg-transparent transition-all">
+                <div className="absolute left-1/2 transform -translate-x-1/2 top-[80%] z-10  bg-transparent transition-all max-[1200px]:hidden">
                   {item.path == "/services" && (
                     <ServicesDropDown subNav={item.subNav} />
                   )}

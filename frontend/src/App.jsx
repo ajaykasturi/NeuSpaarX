@@ -13,6 +13,9 @@ import Error404 from "./pages/ErrorPages/Error404";
 import Dynamic365Page from "./pages/ServicePages/Dynamic365Page";
 import PowerBiPage from "./pages/ServicePages/PowerBiPage";
 import DataIntegrationPage from "./pages/ServicePages/DataIntegrationPage";
+import DataEngineeringPage from "./pages/ServicePages/DataEngineeringPage";
+import DataVisualizationPage from "./pages/ServicePages/DataVisualizationPage";
+import DataManagementPage from "./pages/ServicePages/DataManagementPage";
 function App() {
   return (
     <Routes>
@@ -56,6 +59,9 @@ function App() {
         <Route path="power-automate" element={<PowerAutomatePage />} />
         <Route path="power-bi" element={<PowerBiPage />} />
         <Route path="data-integration" element={<DataIntegrationPage />} />
+        <Route path="data-visualization" element={<DataVisualizationPage />} />
+        <Route path="data-engineering" element={<DataEngineeringPage />} />
+        <Route path="data-management" element={<DataManagementPage />} />
       </Route>
       <Route
         path="industries"
