@@ -7,10 +7,14 @@ import powerbi from "../../assets/images/powerBi.png";
 import ds from "../../assets/images/ds.png";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import slide1 from "../../assets/slides/slide1.png";
+import slide2 from "../../assets/slides/slide2.png";
+import slide3 from "../../assets/slides/slide3.png";
 export default function Carousel() {
+  const slides = [slide1, slide2, slide3];
   const [emblaRef, emblaApi] = useEmblaCarousel(
-    { loop: true, active: true, align: "center", axis: "x", slidesToScroll: 1 },
-    [Autoplay()]
+    { loop: true, active: true, align: "center", axis: "x", slidesToScroll: 1 }
+    // [Autoplay()]
   );
   useEffect(() => {
     if (emblaApi) {
@@ -26,62 +30,39 @@ export default function Carousel() {
   }, [emblaApi]);
   return (
     <div className="flex flex-col gap-y-2 relative h-full overflow-hidden">
-      <div className="w-full" ref={emblaRef}>
-        <div className="flex w-full gap-x-2">
-          <div className="w-full flex flex-col items-center rounded-[0.9375rem] [flex:0_0_100%]">
-            <div className="flex items-center justify-end gap-x-20 self-stretch">
-              <div className="text-9xl pl-10 font-light">
-                Unleash the <br /> Power of{" "}
-                <span className="font-black">AI</span>{" "}
-              </div>
-              <div className="h-[40rem]">
-                <img src={aiHands} className="h-full w-full" />
-              </div>
+      <div className="w-full h-full m-1" ref={emblaRef}>
+        <div className="flex w-full gap-x-2 h-full">
+          {slides.map((slide) => (
+            <div
+              key={slide}
+              className="[flex:0_0_100%] flex justify-center items-center"
+            >
+              <img src={slide} className="w-full object-contain" />
             </div>
+          ))}
+          {/* <div className="[flex:0_0_100%] flex justify-center items-center">
+            <img src={slide1} />
           </div>
-          <div className="flex justify-end gap-6 px-10 items-center w-full rounded-[0.9375rem] [flex:0_0_100%]">
-            <div className="flex flex-col gap-y-4 items-center">
-              <div className="flex flex-col gap-y-6">
-                <div className="font-Poppins text-6xl font-semibold inline-block">
-                  BI & DATA VISUALIZATION
-                </div>
-                <div className="font-Poppins text-2xl font-normal">
-                  Transforming Complex Information into Compelling insights
-                </div>
-              </div>
-            </div>
-            <div className="h-[50rem]">
-              {" "}
-              <img src={powerbi} className="h-full w-full object-cover" />
-            </div>
+          <div className="[flex:0_0_100%] flex justify-center items-center">
+            <img src={slide2} className="w-full h-auto object-contain" />
           </div>
-          <div className="flex flex-col justify-center items-center w-full p-8 [flex:0_0_100%] mr-2">
-            <div className="flex justify-evenly items-center gap-x-8 self-stretch">
-              <div className="h-[30rem]">
-                <img src={ds} className="w-full h-full" />
-              </div>
-              <div className="font-Poppins text-4xl font-normal">
-                Navigating Insights & Solutions through <br />
-                <span className="text-7xl font-semibold">DATA SCIENCE</span>
-                <br />
-                Excellence
-              </div>
-            </div>
-          </div>
+          <div className="[flex:0_0_100%] flex justify-center items-center">
+            <img src={slide3} />
+          </div> */}
         </div>
       </div>
-      <div className="flex w-full justify-between gap-x-2 absolute top-[45%]">
+      <div className="flex w-full justify-between items-center gap-x-2 absolute inset-0">
         <button
-          className="hover:opacity-90 px-4 py-2 rounded-full"
+          className="hover:opacity-90 p-1 rounded-full w-fit h-fit"
           onClick={scrollPrev}
         >
-          <ArrowBackIosNewIcon sx={{ fontSize: 40 }} />
+          <ArrowBackIosNewIcon />
         </button>
         <button
-          className="hover:opacity-90 px-4 py-2 rounded-full"
+          className="hover:opacity-90 p-1 rounded-full w-fit h-fit"
           onClick={scrollNext}
         >
-          <ArrowForwardIosIcon sx={{ fontSize: 40 }} />
+          <ArrowForwardIosIcon />
         </button>
       </div>
     </div>

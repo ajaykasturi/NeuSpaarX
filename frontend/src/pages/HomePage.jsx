@@ -12,7 +12,7 @@ import AgileComponent from "../components/AgileMethodology/AgileComponent";
 function Home() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col h-dvh  relative">
+      <div className="flex flex-col lg:h-screen  relative">
         <div className="absolute -z-10 w-full h-full">
           <img src={bgImgHome} className="w-full h-full" />
         </div>
