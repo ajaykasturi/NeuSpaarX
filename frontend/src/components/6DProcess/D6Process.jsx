@@ -64,9 +64,9 @@ function D6Process() {
     });
   }, []);
   return (
-    <div className="flex flex-col gap-y-2 mt-16 ">
+    <div className="flex flex-col gap-y-2 mt-16 mx-[5vw]">
       <motion.div
-        className="text-[#1B2C59] text-6xl font-Poppins text-center sticky top-20"
+        className="text-[#1B2C59] text-3xl font-semibold sm:text-4xl md:text-5xl xl:text-6xl font-Poppins text-center sticky top-14"
         style={{
           display: !isVisible ? "none" : "block",
         }}

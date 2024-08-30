@@ -16,18 +16,21 @@ function D6Card({ card, i, progress, targetScale, range }) {
     >
       <motion.div
         style={{ position: "relative", top: `calc(-1% + ${i * 25}px)`, scale }}
-        className="grid grid-cols-2 grid-rows-1 gradient-border rounded-2xl break-words h-[25rem] w-[60%]"
+        className="flex flex-col lg:flex-row  items-center justify-start  border-[0.5px] shadow bg-gray-50 border-companycolor  rounded-2xl break-words h-[25rem] w-full lg:w-[50rem] overflow-hidden p-4 gap-6"
       >
-        <div className="bg-D6Img rounded-l-2xl relative overflow-hidden">
-          <motion.div style={{ scale: scaleImg }} className="w-full h-full">
+        <div className="rounded-3xl relative overflow-hidden size-[11.5rem] min-[800px]:size-[13rem] lg:size-[20rem] shrink-0 ">
+          <motion.div
+            style={{ scale: scaleImg }}
+            className="bg-[#EDEDED] w-full h-full"
+          >
             <img src={card.img} className="w-full h-full object-cover" />
           </motion.div>
         </div>
-        <div className="flex flex-col gap-y-6 items-start justify-center p-12">
-          <div className="text-[#1B2C59] font-Poppins text-7xl font-normal">
+        <div className="flex flex-col gap-y-5 items-center justify-center max-w-[35rem]">
+          <h1 className="text-colorblue text-center font-Poppins font-semibold text-2xl sm:text-3xl md:text-4xl">
             {card.title}
-          </div>
-          <div className="text-[#1B2C59] font-Poppins  text-2xl font-normal">
+          </h1>
+          <div className="text-[#1B2C59] font-Poppins font-normal  lg:px-0">
             {card.content}
           </div>
         </div>

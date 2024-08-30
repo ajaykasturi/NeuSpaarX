@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "../Button/Button";
 import Card from "./Card";
-
+import { useNavigate } from "react-router-dom";
 function Industries() {
+  const navigate = useNavigate();
   const config = [
     {
       id: 1,
@@ -38,7 +39,7 @@ function Industries() {
           analysis, data management, cloud computing, data visualization and
           many data related technologies regardless of business size.
         </div>
-        <Button name={"Know More"} />
+        <Button onClick={() => navigate("/industries")} name={"Know More"} />
       </div>
       <div className="grid grid-cols-1 gap-8  lg:grid-cols-2 lg:gap-10 xl:gap-12 justify-items-center self-center">
         {config.map((card) => (

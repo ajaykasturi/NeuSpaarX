@@ -13,7 +13,7 @@ function About() {
     <>
       <WhoWeAre />
       <D6Process />
-      <WhyNeuSpaarx />
+      {/* <WhyNeuSpaarx /> */}
       <LetsConnect />
     </>
   );

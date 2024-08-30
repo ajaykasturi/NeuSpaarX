@@ -3,7 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import bgImgHome from "../../assets/images/bgimg.png";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
-function ServicesLanding({ title, content, btnText, sideImg }) {
+function ServicesLanding({ title, content, btnText, sideImg, imgClass }) {
   return (
     <div className="flex flex-col  min-h-svh sm:min-h-fit lg:min-h-dvh relative items-center">
       <div className="absolute -z-10 w-full h-full">
@@ -29,9 +29,16 @@ function ServicesLanding({ title, content, btnText, sideImg }) {
             </Link>
           )}
         </div>
-        <div className="w-full self-start sm:self-auto">
-          <img src={sideImg} className="w-full h-full object-contain" />
-        </div>
+        {sideImg && (
+          <div className="w-full self-start sm:self-auto">
+            <img
+              src={sideImg}
+              className={`w-full h-full object-contain ${
+                imgClass ? imgClass : ""
+              }`}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
