@@ -16,6 +16,8 @@ import DataIntegrationPage from "./pages/ServicePages/DataIntegrationPage";
 import DataEngineeringPage from "./pages/ServicePages/DataEngineeringPage";
 import DataVisualizationPage from "./pages/ServicePages/DataVisualizationPage";
 import DataManagementPage from "./pages/ServicePages/DataManagementPage";
+import DataMigrationPage from "./pages/ServicePages/DataMigrationPage";
+import DataSciencePage from "./pages/ServicePages/DataSciencePage";
 function App() {
   return (
     <Routes>
@@ -62,6 +64,8 @@ function App() {
         <Route path="data-visualization" element={<DataVisualizationPage />} />
         <Route path="data-engineering" element={<DataEngineeringPage />} />
         <Route path="data-management" element={<DataManagementPage />} />
+        <Route path="data-migration" element={<DataMigrationPage />} />
+        <Route path="data-science" element={<DataSciencePage />} />
       </Route>
       <Route
         path="industries"

@@ -4,6 +4,7 @@ import datacollectionimg from "../../../../assets/stages/datacollection.png";
 import dataprocessingimg from "../../../../assets/stages/dataprocessing.png";
 import datastorageimg from "../../../../assets/stages/datastorage.png";
 import dataanalysisimg from "../../../../assets/stages/dataanalysis.png";
+import ServicesWeFollow from "../../ServicesWeFollow";
 function DataEngStages() {
   const config = [
     {
@@ -44,18 +45,8 @@ function DataEngStages() {
       img: dataanalysisimg,
     },
   ];
-  return (
-    <div className="bg-mainBgImg bg-no-repeat px-[5vw] bg-cover py-10 sm:py-16 md:py-24 flex flex-col gap-y-12 sm:gap-y-16 rounded-2xl">
-      <h1 className="text-2xl min-[450px]:text-3xl sm:text-4xl md:text-5xl xl:text-5xl text-center text-colorblue">
-        Stages we follow as a part of Data Engineering
-      </h1>
-      <div className="flex flex-col justify-center items-center gap-y-8">
-        {config.map((card) => (
-          <StageCard key={card.id} card={card} />
-        ))}
-      </div>
-    </div>
-  );
+  const title = "Stages we follow as a part of Data Engineering";
+  return <ServicesWeFollow title={title} config={config} />;
 }
 
 export default DataEngStages;
