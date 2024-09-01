@@ -1,45 +1,48 @@
 import React from "react";
 import PowerCard from "../PowerBi/PowerCard";
-
+import powerbi from "../../../assets/datavisualization/powerbi.png";
+import ssrs from "../../../assets/datavisualization/ssrs.png";
+import tableau from "../../../assets/datavisualization/tableau.png";
+import qlik from "../../../assets/datavisualization/qlik.png";
 function DataVisualTools() {
   const config = [
     {
       id: 1,
       title: "Power BI",
       content:
-        "Power BI is a leading Microsoft tool for connecting multiple data sources and creating interactive, effective reports to enhance business data understanding.",
-      img: "",
+        "Power BI is a Microsoft tool for creating interactive dashboards and reports. It integrates seamlessly with other Microsoft products and offers real-time data insights to support informed decision-making.",
+      img: powerbi,
     },
     {
       id: 2,
       title: "SSRS",
       content:
-        "SQL Server Reporting System (SSRS) is a Microsoft tool used to create, design, deploy and manage reports. We use SSRS to build custom reports for business requirements.",
-      img: "",
+        "SSRS provides enterprise-level reporting capabilities, enabling users to create, manage, and distribute detailed, interactive reports. It’s ideal for organizations needing structured, paginated reports.",
+      img: ssrs,
     },
     {
       id: 3,
       title: "Tableau",
       content:
-        "Tableau is among the world’s leading reporting tools which is used to build reports interactively. We use Tableau to build reports that give successful business ideas, strategies by understanding their data.",
-      img: "",
+        "Tableau is a popular tool for creating dynamic visualizations from various data sources. Its intuitive interface allows users to easily build interactive dashboards that reveal business insights",
+      img: tableau,
     },
     {
       id: 4,
       title: "Qlik",
       content:
-        "Qlik provides both integration and reporting in a single tool. We use Qlik to reduce the gap between data and insightable actions.",
-      img: "",
+        "Qlik is a data analytics platform known for its associative data model. It allows users to create interactive visualizations and dashboards, integrating data from multiple sources seamlessly.",
+      img: qlik,
     },
   ];
   return (
     <div className="mx-[5vw] my-10 flex flex-col gap-y-9 sm:gap-y-16 items-center">
       <h1 className="text-2xl min-[450px]:text-3xl sm:text-4xl md:text-5xl text-colorblue text-center ">
-        Tools We Use
+        Our Toolbox
       </h1>
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="grid grid-cols-1 gap-y-16 min-[850px]:grid-cols-2 min-[850px]:gap-10 lg:gap-20">
         {config.map((card) => (
-          <PowerCard  card={card} />
+          <PowerCard card={card} />
         ))}
       </div>
     </div>
