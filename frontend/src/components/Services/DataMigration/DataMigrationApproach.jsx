@@ -1,10 +1,10 @@
 import React from "react";
 import StageCard from "../DataEngineering/Stages/StageCard";
-import security from "../../../assets/datamigration/datasecurity.svg";
-import dataquality from "../../../assets/datamigration/dataquality.svg";
-import datatransformation from "../../../assets/datamigration/datatransformation.svg";
-import dataintegration from "../../../assets/datamigration/dataintegration.svg";
-import performance from "../../../assets/datamigration/performance.svg";
+import security from "../../../assets/datamigration/datasecurity.png";
+import dataquality from "../../../assets/datamigration/dataquality.png";
+import datatransformation from "../../../assets/datamigration/datatransformation.png";
+import dataintegration from "../../../assets/datamigration/dataintegration.png";
+import performance from "../../../assets/datamigration/performance.png";
 import ServicesWeFollow from "../ServicesWeFollow";
 function DataMigrationApproach() {
   const config = [
@@ -49,7 +49,7 @@ function DataMigrationApproach() {
       img: performance,
     },
   ];
-  const title = "Approach we follow as a part of Data Migration";
+  const title = "Data Mastery: 6D's";
   return <ServicesWeFollow title={title} config={config} />;
 }
 
