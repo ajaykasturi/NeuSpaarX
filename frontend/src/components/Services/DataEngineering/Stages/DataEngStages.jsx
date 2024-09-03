@@ -1,9 +1,9 @@
 import React from "react";
 import StageCard from "./StageCard";
-import datacollectionimg from "../../../../assets/stages/datacollection.png";
-import dataprocessingimg from "../../../../assets/stages/dataprocessing.png";
-import datastorageimg from "../../../../assets/stages/datastorage.png";
-import dataanalysisimg from "../../../../assets/stages/dataanalysis.png";
+import datacollectionimg from "../../../../assets/dataeng/datacollection.png";
+import dataprocessingimg from "../../../../assets/dataeng/dataprocessing.png";
+import datastorageimg from "../../../../assets/dataeng/datastorage.png";
+import dataanalysisimg from "../../../../assets/dataeng/dataanalysis.png";
 import ServicesWeFollow from "../../ServicesWeFollow";
 function DataEngStages() {
   const config = [
