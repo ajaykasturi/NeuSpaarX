@@ -6,6 +6,8 @@ import WhyCloud from "../../components/Services/CloudComputing/WhyCloud";
 import CloudMigration from "../../components/Services/CloudComputing/CloudMigration";
 import CloudExpertiseTools from "../../components/Services/CloudComputing/CloudExpertiseTools";
 import LetsConnect from "../../components/ContactUs/LetsConnect";
+import Slider from "../../components/Services/CloudComputing/Slider";
+import CloudFocus from "../../components/Services/CloudComputing/CloudFocus";
 function CloudComputingPage() {
   return (
     <>
@@ -23,6 +25,7 @@ function CloudComputingPage() {
       />
       <WhyCloud />
       <CloudExpertiseTools />
+      <CloudFocus />
       <CloudMigration />
       <LetsConnect
         title={"Start Your Cloud Journey"}

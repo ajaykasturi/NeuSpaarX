@@ -1,14 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import bgImgHome from "../assets/images/bgimg.png";
-import aiHands from "../assets/images/aihands2.png";
 import Carousel from "../components/Courosel/Carousel";
 import AboutUs from "../components/AboutUs/AboutUs";
-import WeFocusOn from "../components/WeFocusOn/WeFocusOn";
 import Services from "../components/Services/Services";
 import Industries from "../components/Industries/Industries";
 import ContactUs from "../components/ContactUs/ContactUs";
 import AgileComponent from "../components/AgileMethodology/AgileComponent";
+import HomeFocus from "../components/WeFocusOn/HomeFocus";
 function Home() {
   return (
     <div className="flex flex-col">
@@ -20,7 +19,7 @@ function Home() {
         <Carousel />
       </div>
       <AboutUs />
-      <WeFocusOn />
+      <HomeFocus />
       <AgileComponent />
       <Services />
       <Industries />
