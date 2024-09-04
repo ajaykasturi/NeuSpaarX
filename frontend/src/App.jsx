@@ -19,74 +19,80 @@ import DataManagementPage from "./pages/ServicePages/DataManagementPage";
 import DataMigrationPage from "./pages/ServicePages/DataMigrationPage";
 import DataSciencePage from "./pages/ServicePages/DataSciencePage";
 import CloudComputingPage from "./pages/ServicePages/CloudComputingPage";
+import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={
-          <Layout>
-            <HomePage />
-          </Layout>
-        }
-      />
-      <Route
-        path="contact-us"
-        element={
-          <Layout>
-            <ContactPage />
-          </Layout>
-        }
-      />
-      <Route
-        path="about"
-        element={
-          <Layout>
-            <AboutPage />
-          </Layout>
-        }
-      />
-      <Route
-        path="services"
-        element={
-          <Layout>
-            <Outlet />
-          </Layout>
-        }
-      >
-        <Route index element={<DevOpsPage />} />
-        <Route path="devops" element={<DevOpsPage />} />
-        <Route path="dynamic-365" element={<Dynamic365Page />} />
-        <Route path="wordpress" element={<WordPressPage />} />
-        <Route path="powerapps" element={<PowerAppsPage />} />
-        <Route path="power-automate" element={<PowerAutomatePage />} />
-        <Route path="power-bi" element={<PowerBiPage />} />
-        <Route path="data-integration" element={<DataIntegrationPage />} />
-        <Route path="data-visualization" element={<DataVisualizationPage />} />
-        <Route path="data-engineering" element={<DataEngineeringPage />} />
-        <Route path="data-management" element={<DataManagementPage />} />
-        <Route path="data-migration" element={<DataMigrationPage />} />
-        <Route path="data-science" element={<DataSciencePage />} />
-        <Route path="cloud-computing" element={<CloudComputingPage />} />
-      </Route>
-      <Route
-        path="industries"
-        element={
-          <Layout>
-            <IndustriesPage />
-          </Layout>
-        }
-      />
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <HomePage />
+            </Layout>
+          }
+        />
+        <Route
+          path="contact-us"
+          element={
+            <Layout>
+              <ContactPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="about"
+          element={
+            <Layout>
+              <AboutPage />
+            </Layout>
+          }
+        />
+        <Route
+          path="services"
+          element={
+            <Layout>
+              <Outlet />
+            </Layout>
+          }
+        >
+          <Route index element={<DevOpsPage />} />
+          <Route path="devops" element={<DevOpsPage />} />
+          <Route path="dynamic-365" element={<Dynamic365Page />} />
+          <Route path="wordpress" element={<WordPressPage />} />
+          <Route path="powerapps" element={<PowerAppsPage />} />
+          <Route path="power-automate" element={<PowerAutomatePage />} />
+          <Route path="power-bi" element={<PowerBiPage />} />
+          <Route path="data-integration" element={<DataIntegrationPage />} />
+          <Route
+            path="data-visualization"
+            element={<DataVisualizationPage />}
+          />
+          <Route path="data-engineering" element={<DataEngineeringPage />} />
+          <Route path="data-management" element={<DataManagementPage />} />
+          <Route path="data-migration" element={<DataMigrationPage />} />
+          <Route path="data-science" element={<DataSciencePage />} />
+          <Route path="cloud-computing" element={<CloudComputingPage />} />
+        </Route>
+        <Route
+          path="industries"
+          element={
+            <Layout>
+              <IndustriesPage />
+            </Layout>
+          }
+        />
 
-      <Route
-        path="*"
-        element={
-          <Layout>
-            <Error404 />
-          </Layout>
-        }
-      />
-    </Routes>
+        <Route
+          path="*"
+          element={
+            <Layout>
+              <Error404 />
+            </Layout>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

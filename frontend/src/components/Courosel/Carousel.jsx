@@ -37,7 +37,7 @@ export default function Carousel() {
               key={slide}
               className="[flex:0_0_100%] flex justify-center items-center"
             >
-              <img src={slide} className="w-full object-contain" />
+              <img src={slide} className="w-full h-full object-contain" />
             </div>
           ))}
           {/* <div className="[flex:0_0_100%] flex justify-center items-center">
