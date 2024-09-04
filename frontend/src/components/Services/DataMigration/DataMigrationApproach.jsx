@@ -49,7 +49,7 @@ function DataMigrationApproach() {
       img: performance,
     },
   ];
-  const title = "Data Mastery: 6D's";
+  const title = "We Excel In";
   return <ServicesWeFollow title={title} config={config} />;
 }
 

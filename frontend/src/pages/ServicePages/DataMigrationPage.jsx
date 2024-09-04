@@ -3,6 +3,8 @@ import ServicesLanding from "../../components/Services/ServicesLanding";
 import datamigration from "../../assets/images/datamigration.png";
 import SimpleCard from "../../components/CommonComps/SimpleCard";
 import DataMigrationApproach from "../../components/Services/DataMigration/DataMigrationApproach";
+import DataMigrationPhases from "../../components/Services/DataMigration/DataMigrationPhases";
+import OurTechniques from "../../components/Services/DataMigration/OurTechniques";
 function DataMigrationPage() {
   return (
     <>
@@ -17,6 +19,8 @@ function DataMigrationPage() {
         className="my-20 mx-[5vw]"
       />
       <DataMigrationApproach />
+      <DataMigrationPhases />
+      <OurTechniques />
     </>
   );
 }

@@ -9,7 +9,7 @@ function WeFocusOn() {
     { icon: "", title: "Continuos Learning" },
     { icon: "", title: "Less manual effort" },
   ];
-  const concatConfig = [...cardConfig, ...cardConfig, ...cardConfig];
+  const concatConfig = [...cardConfig, ...cardConfig,];
   return (
     <SliderBackground>
       <div className="text-[2.5rem]  md:text-[3rem] lg:text-[4rem] font-Poppins text-center text-[#1B2C59] font-medium md:font-normal">

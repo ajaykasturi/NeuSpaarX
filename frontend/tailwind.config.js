@@ -51,6 +51,7 @@ export default {
         autoScrollInfiniteMobile10: "mobileSlide 10s infinite linear",
         autoScrollInfiniteMobile15: "mobileSlide 15s infinite linear",
         autoScrollInfiniteMobile20: "mobileSlide 20s infinite linear",
+        scrollLeft: "slide 5s linear",
       },
     },
   },
