@@ -3,7 +3,7 @@ import React from "react";
 function VCard({ card, h = "h-[25rem]", w = "min-[376px]:w-[22rem]" }) {
   return (
     <div
-      className={` hover:cursor-pointer p-8 shadow-md border-2 border-transparent rounded-2xl ${h} ${w} flex justify-center items-start overflow-hidden`}
+      className={`bg-slate-50 hover:cursor-pointer p-8 shadow-md border-2 border-transparent rounded-2xl ${h} ${w} flex justify-center items-start overflow-hidden`}
     >
       <div className="flex flex-col gap-y-10 items-center justify-center text-colorblue">
         <div className="w-[4.5rem] h-[4.5rem] rounded-full bg-[#F1F1F1] shrink-0 border-2 drop-shadow-lg flex justify-center items-center p-2 overflow-hidden">

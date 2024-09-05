@@ -29,14 +29,14 @@ function BigFocus() {
   const title = "We focus on 3 V's";
   const h = 24;
   return (
-    <div className="px-[5vw] py-10 sm:py-16 md:py-24 flex flex-col gap-y-12 sm:gap-y-16 rounded-2xl">
+    <div className="bg-slate-50 px-[5vw] py-10 sm:py-16 md:py-24 flex flex-col gap-y-12 sm:gap-y-16 rounded-2xl">
       <h1 className="text-2xl min-[450px]:text-3xl sm:text-4xl md:text-5xl xl:text-5xl text-center text-colorblue">
         {title}
       </h1>
       <div
-        className={`grid md:grid-cols-2 grid-rows-[26rem] place-items-center`}
+        className={`grid md:grid-cols-2 gap-y-8 gap-x-8 xl:gap-x-20 grid-rows-[26rem] place-items-center`}
       >
-        <div className="h-[27rem] overflow-auto no-scrollbar relative">
+        <div className="md:justify-self-end h-[27rem] overflow-auto no-scrollbar relative">
           <span className="sticky top-1/3 left-[90%] transform translate-x-1/2">
             <UnfoldMoreDoubleIcon />
           </span>
@@ -51,8 +51,8 @@ function BigFocus() {
             ))}
           </div>
         </div>
-        <div className="p-5">
-          <div className="p-4 h-fit text-center shadow-lg rounded-3xl text-colorblue">
+        <div className="p-2 md:justify-self-start ">
+          <div className="p-4 h-fit text-center shadow-lg rounded-3xl text-colorblue bg-slate-50">
             The Volume, Variety, and Velocity of large volumes of data make it
             difficult to process and analyze using traditional data management
             systems. As a result, NeuSpaarX often use specialized tools and
