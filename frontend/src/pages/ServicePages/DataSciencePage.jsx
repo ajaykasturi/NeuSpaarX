@@ -3,6 +3,8 @@ import ServicesLanding from "../../components/Services/ServicesLanding";
 import datascienceimg from "../../assets/datascience/dsimg.webp";
 import SimpleCard from "../../components/CommonComps/SimpleCard";
 import DSApproach from "../../components/Services/DataScience/DSApproach";
+import CoreSolutions from "../../components/Services/DataScience/CoreSolutions";
+import LetsConnect from "../../components/ContactUs/LetsConnect";
 function DataSciencePage() {
   return (
     <>
@@ -18,7 +20,14 @@ function DataSciencePage() {
         }
         className="my-20 mx-[5vw]"
       />
+      <CoreSolutions />
       <DSApproach />
+      <LetsConnect
+        title={"Take the Next Step in Data Science"}
+        content={
+          "Connect with our experts to explore custom data solutions that drive your business forward"
+        }
+      />
     </>
   );
 }

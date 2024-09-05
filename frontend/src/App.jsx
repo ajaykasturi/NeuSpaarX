@@ -20,6 +20,7 @@ import DataMigrationPage from "./pages/ServicePages/DataMigrationPage";
 import DataSciencePage from "./pages/ServicePages/DataSciencePage";
 import CloudComputingPage from "./pages/ServicePages/CloudComputingPage";
 import { BrowserRouter } from "react-router-dom";
+import BigDataPage from "./pages/ServicePages/BigDataPage";
 function App() {
   return (
     <BrowserRouter>
@@ -73,6 +74,7 @@ function App() {
           <Route path="data-migration" element={<DataMigrationPage />} />
           <Route path="data-science" element={<DataSciencePage />} />
           <Route path="cloud-computing" element={<CloudComputingPage />} />
+          <Route path="big-data" element={<BigDataPage />} />
         </Route>
         <Route
           path="industries"

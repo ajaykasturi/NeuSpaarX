@@ -1,10 +1,10 @@
 import React from "react";
 import ServicesWeFollow from "../ServicesWeFollow";
-import discover from "../../../assets/datascience/discover.svg";
-import collect from "../../../assets/datascience/collect.svg";
-import analyze from "../../../assets/datascience/analyze.svg";
-import visualize from "../../../assets/datascience/visualize.svg";
-import monitor from "../../../assets/datascience/monitor.svg";
+import discover from "../../../assets/datascience/discover.png";
+import collect from "../../../assets/datascience/collect.png";
+import analyze from "../../../assets/datascience/analyze.png";
+import visualize from "../../../assets/datascience/visualize.png";
+import monitor from "../../../assets/datascience/monitor.png";
 function DSApproach() {
   const config = [
     {

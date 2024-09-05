@@ -41,11 +41,11 @@ function OurTechniques() {
   ];
   const config = [...configMain, ...configMain];
   return (
-    <div className="bg-mainBgImg bg-no-repeat  bg-cover py-10 sm:py-16 md:py-24 flex flex-col gap-y-12 sm:gap-y-16 rounded-2xl border-0">
+    <div className="bg-mainBgImg bg-no-repeat  bg-cover py-10 sm:py-16 md:py-24 flex flex-col gap-y-12 sm:gap-y-16 rounded-2xl border-0 my-24 relative">
       <h1 className="text-2xl min-[450px]:text-3xl sm:text-4xl md:text-5xl xl:text-5xl text-center text-colorblue">
         Our Techniques
       </h1>
-      <div className="overflow-hidden  w-full overlay after-overlay before-overlay  hover:[animation-play-state:paused]">
+      <div className="overflow-hidden  w-full overlay before-overlay">
         <div className="flex gap-x-16 w-max animate-autoScrollInfinite hover:[animation-play-state:paused]">
           {config.map((card, index) => (
             <DMCard key={index} card={card} />

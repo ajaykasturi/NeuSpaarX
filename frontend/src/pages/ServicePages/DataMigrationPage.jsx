@@ -5,6 +5,7 @@ import SimpleCard from "../../components/CommonComps/SimpleCard";
 import DataMigrationApproach from "../../components/Services/DataMigration/DataMigrationApproach";
 import DataMigrationPhases from "../../components/Services/DataMigration/DataMigrationPhases";
 import OurTechniques from "../../components/Services/DataMigration/OurTechniques";
+import LetsConnect from "../../components/ContactUs/LetsConnect";
 function DataMigrationPage() {
   return (
     <>
@@ -21,6 +22,10 @@ function DataMigrationPage() {
       <DataMigrationApproach />
       <DataMigrationPhases />
       <OurTechniques />
+      <LetsConnect
+        title={"Ready for a Smooth Transition?"}
+        content={"Effortlessly upgrade your systems with our proven techniques"}
+      />
     </>
   );
 }
