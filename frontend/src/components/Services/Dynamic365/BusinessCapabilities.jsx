@@ -1,6 +1,7 @@
 import React from "react";
 import businesscapsimg from "../../../assets/images/businesscaps.png";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import LazyImage from "../../CommonComps/LazyImage";
 function BusinessCapabilities() {
   const config = [
     { id: 1, title: "Sales" },
@@ -28,7 +29,7 @@ function BusinessCapabilities() {
           ))}
         </div>
         <div className="w-[90%]">
-          <img src={businesscapsimg} className="w-full h-full" />
+          <LazyImage src={businesscapsimg} className="w-full h-full" />
         </div>
       </div>
     </div>

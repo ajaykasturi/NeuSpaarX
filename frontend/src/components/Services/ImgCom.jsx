@@ -1,4 +1,5 @@
 import React from "react";
+import LazyImage from "../CommonComps/LazyImage";
 
 function ImgCom({ img, title }) {
   return (
@@ -6,7 +7,10 @@ function ImgCom({ img, title }) {
       <h1 className="text-2xl min-[450px]:text-3xl sm:text-4xl lg:text-5xl text-colorblue text-center ">
         {title}
       </h1>
-      <img src={img} className="md:w-[75%] lg:w-[70%] 2xl:w-[70%] rounded-xl" />
+      <LazyImage
+        src={img}
+        className="md:w-[75%] lg:w-[70%] 2xl:w-[70%] rounded-xl"
+      />
     </div>
   );
 }

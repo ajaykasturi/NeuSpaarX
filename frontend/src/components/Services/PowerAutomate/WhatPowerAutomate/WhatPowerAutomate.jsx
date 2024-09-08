@@ -1,6 +1,7 @@
 import React from "react";
 import SimpleCard from "../../../CommonComps/SimpleCard";
 import introimgicon from "../../../../assets/images/whatpowerautomateimg.png";
+import LazyImage from "../../../CommonComps/LazyImage";
 
 function WhatPowerAutomate() {
   return (
@@ -10,7 +11,7 @@ function WhatPowerAutomate() {
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center gap-x-10">
         <div className="w-[12rem] md:min-w-[20rem] md:max-w-[20rem]">
-          <img src={introimgicon} className="w-full h-full" />
+          <LazyImage src={introimgicon} className="w-full h-full" />
         </div>
         <SimpleCard
           text={

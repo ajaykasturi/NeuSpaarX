@@ -5,6 +5,7 @@ import XIcon from "@mui/icons-material/X";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Address from "./Address";
+import LazyImage from "../CommonComps/LazyImage";
 function Footer() {
   return (
     <footer
@@ -13,7 +14,11 @@ function Footer() {
       <div className="flex max-[899px]:flex-col gap-12 grow flex-row max-[899px]:items-center">
         <div className="flex flex-col gap-y-6 items-start shrink-0 grow">
           <div className="h-16">
-            <img src={logo} className="w-full h-full" alt="NeuspaRx Logo" />
+            <LazyImage
+              src={logo}
+              className="w-full h-full"
+              alt="NeuspaRx Logo"
+            />
           </div>
           <Address />
         </div>

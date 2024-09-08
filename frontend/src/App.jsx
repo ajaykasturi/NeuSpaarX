@@ -124,7 +124,9 @@ function App() {
           path="industries"
           element={
             <Layout>
-              <IndustriesPage />
+              <Suspense fallback={<Loading />}>
+                <IndustriesPage />
+              </Suspense>
             </Layout>
           }
         />

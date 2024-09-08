@@ -1,4 +1,5 @@
 import React from "react";
+import LazyImage from "../../CommonComps/LazyImage";
 
 function VCard({ card, h = "h-[25rem]", w = "min-[376px]:w-[22rem]" }) {
   return (
@@ -7,7 +8,7 @@ function VCard({ card, h = "h-[25rem]", w = "min-[376px]:w-[22rem]" }) {
     >
       <div className="flex flex-col gap-y-10 items-center justify-center text-colorblue">
         <div className="w-[4.5rem] h-[4.5rem] rounded-full bg-[#F1F1F1] shrink-0 border-2 drop-shadow-lg flex justify-center items-center p-2 overflow-hidden">
-          <img src={card.icon} className="w-full h-full" />
+          <LazyImage src={card.icon} className="w-full h-full" />
         </div>
         <div className="flex flex-col gap-y-4 items-center">
           <div className="font-Poppins font-medium text-xl text-center">

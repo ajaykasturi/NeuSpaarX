@@ -1,12 +1,12 @@
 import React from "react";
 import aboutBg from "../../assets/images/aboutus.png";
 import { Link } from "react-router-dom";
+import LazyImage from "../CommonComps/LazyImage";
 function AboutUs() {
   return (
     <div className="flex gap-x-24 justify-between mx-[5vw] my-10 max-[1050px]:flex-col max-[1050px]:gap-y-10 max-[1050px]:items-center items-center">
       <div className="rounded-2xl w-[15rem] min-[650px]:w-[20rem] min-[1051px]:h-[30rem]  min-[1051px]:min-w-fit">
-        <img
-          loading="lazy"
+        <LazyImage
           src={aboutBg}
           className="w-full h-full rounded-2xl"
           alt="about us image"

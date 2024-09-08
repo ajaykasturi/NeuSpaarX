@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import bgImgHome from "../../assets/images/bgimg.png";
 import whoweareimg from "../../assets/images/whoweare.png";
 import MissionVisionCard from "./MissionVisionCard";
+import LazyImage from "../CommonComps/LazyImage";
 function WhoWeAre() {
   return (
     <>
@@ -26,7 +27,7 @@ function WhoWeAre() {
           </div>
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 justify-items-center place-items-center">
             <div className="sm:w-[30rem] md:w-[35rem]">
-              <img src={whoweareimg} className="w-full h-full" />
+              <LazyImage src={whoweareimg} className="w-full h-full" />
             </div>
             <MissionVisionCard />
           </div>

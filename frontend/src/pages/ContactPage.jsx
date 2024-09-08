@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import contactimg from "../assets/images/contactimg.png";
 import ContactForm from "../components/ContactUs/ContactForm";
 import { Mail, Phone, MapPin } from "lucide-react";
+import LazyImage from "../components/CommonComps/LazyImage";
 function Contact() {
   const contactInfo = [
     { name: "Email", content: "hello@sample.io", icon: <Mail /> },
@@ -27,13 +28,16 @@ function Contact() {
         </div>
         <div className="grid grid-cols-1 gap-y-5 md:grid-cols-2 place-items-center">
           <div className="w-[15rem] md:w-fit">
-            <img src={contactimg} />
+            <LazyImage src={contactimg} />
           </div>
           <ContactForm />
         </div>
         <div className="flex flex-col items-center gap-8 min-[899px]:flex-row min-[899px]:justify-evenly">
           {contactInfo.map((item) => (
-            <div key={item.name} className="flex flex-col items-center justify-center gap-y-4">
+            <div
+              key={item.name}
+              className="flex flex-col items-center justify-center gap-y-4"
+            >
               <div>{item.icon}</div>
               <div className="text-2xl font-semibold font-Poppins text-center">
                 {item.name}

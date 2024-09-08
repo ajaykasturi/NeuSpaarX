@@ -3,11 +3,12 @@ import Navbar from "../Navbar/Navbar";
 import bgImgHome from "../../assets/images/bgimg.png";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
+import LazyImage from "../CommonComps/LazyImage";
 function ServicesLanding({ title, content, btnText, sideImg, imgClass }) {
   return (
     <div className="flex flex-col  min-h-svh sm:min-h-fit lg:min-h-dvh relative items-center">
       <div className="absolute -z-10 w-full h-full">
-        <img src={bgImgHome} className="w-full h-full" />
+        <LazyImage src={bgImgHome} className="w-full h-full" />
       </div>
       <Navbar />
       <div className="grid grid-cols-1  sm:grid sm:grid-cols-2 items-center justify-items-center grow  gap-8 sm:pb-10 mx-[4vw] ">

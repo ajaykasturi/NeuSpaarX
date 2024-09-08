@@ -1,6 +1,7 @@
 import React from "react";
 import dataaction from "../../../assets/dataeng/dataaction.svg";
 import ImgCom from "../ImgCom";
+import LazyImage from "../../CommonComps/LazyImage";
 function DataAction() {
   const title = "Data in Action";
   return (
@@ -9,7 +10,7 @@ function DataAction() {
         <h1 className="text-2xl min-[450px]:text-3xl sm:text-4xl lg:text-5xl text-colorblue text-center ">
           {title}
         </h1>
-        <img
+        <LazyImage
           src={dataaction}
           className="sm:w-[90%] min-[900px]:w-[80%] lg:w-[45rem] rounded-xl"
         />
