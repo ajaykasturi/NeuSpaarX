@@ -1,26 +1,54 @@
-import React from "react";
+import React, { Suspense } from "react";
+import { BrowserRouter } from "react-router-dom";
+import Loading from "./components/Loading/Loading";
 import Layout from "./layout/Layout";
 import { Routes, Route, Outlet } from "react-router-dom";
-import ContactPage from "./pages/ContactPage";
-import HomePage from "./pages/HomePage";
-import AboutPage from "./pages/AboutPage";
-import IndustriesPage from "./pages/IndustriesPage";
-import DevOpsPage from "./pages/ServicePages/DevOpsPage";
-import WordPressPage from "./pages/ServicePages/WordPressPage";
-import PowerAppsPage from "./pages/ServicePages/PowerAppsPage";
-import PowerAutomatePage from "./pages/ServicePages/PowerAutomatePage";
-import Error404 from "./pages/ErrorPages/Error404";
-import Dynamic365Page from "./pages/ServicePages/Dynamic365Page";
-import PowerBiPage from "./pages/ServicePages/PowerBiPage";
-import DataIntegrationPage from "./pages/ServicePages/DataIntegrationPage";
-import DataEngineeringPage from "./pages/ServicePages/DataEngineeringPage";
-import DataVisualizationPage from "./pages/ServicePages/DataVisualizationPage";
-import DataManagementPage from "./pages/ServicePages/DataManagementPage";
-import DataMigrationPage from "./pages/ServicePages/DataMigrationPage";
-import DataSciencePage from "./pages/ServicePages/DataSciencePage";
-import CloudComputingPage from "./pages/ServicePages/CloudComputingPage";
-import { BrowserRouter } from "react-router-dom";
-import BigDataPage from "./pages/ServicePages/BigDataPage";
+import ErrorService from "./pages/ErrorPages/ErrorService";
+const ContactPage = React.lazy(() => import("./pages/ContactPage"));
+const HomePage = React.lazy(() => import("./pages/HomePage"));
+const AboutPage = React.lazy(() => import("./pages/AboutPage"));
+const IndustriesPage = React.lazy(() => import("./pages/IndustriesPage"));
+const DevOpsPage = React.lazy(() => import("./pages/ServicePages/DevOpsPage"));
+const WordPressPage = React.lazy(() =>
+  import("./pages/ServicePages/WordPressPage")
+);
+const PowerAppsPage = React.lazy(() =>
+  import("./pages/ServicePages/PowerAppsPage")
+);
+const PowerAutomatePage = React.lazy(() =>
+  import("./pages/ServicePages/PowerAutomatePage")
+);
+const Error404 = React.lazy(() => import("./pages/ErrorPages/Error404"));
+const Dynamic365Page = React.lazy(() =>
+  import("./pages/ServicePages/Dynamic365Page")
+);
+const PowerBiPage = React.lazy(() =>
+  import("./pages/ServicePages/PowerBiPage")
+);
+const DataIntegrationPage = React.lazy(() =>
+  import("./pages/ServicePages/DataIntegrationPage")
+);
+const DataEngineeringPage = React.lazy(() =>
+  import("./pages/ServicePages/DataEngineeringPage")
+);
+const DataVisualizationPage = React.lazy(() =>
+  import("./pages/ServicePages/DataVisualizationPage")
+);
+const DataManagementPage = React.lazy(() =>
+  import("./pages/ServicePages/DataManagementPage")
+);
+const DataMigrationPage = React.lazy(() =>
+  import("./pages/ServicePages/DataMigrationPage")
+);
+const DataSciencePage = React.lazy(() =>
+  import("./pages/ServicePages/DataSciencePage")
+);
+const CloudComputingPage = React.lazy(() =>
+  import("./pages/ServicePages/CloudComputingPage")
+);
+const BigDataPage = React.lazy(() =>
+  import("./pages/ServicePages/BigDataPage")
+);
 function App() {
   return (
     <BrowserRouter>
@@ -29,7 +57,9 @@ function App() {
           path="/"
           element={
             <Layout>
-              <HomePage />
+              <Suspense fallback={<Loading />}>
+                <HomePage />
+              </Suspense>
             </Layout>
           }
         />
@@ -37,7 +67,9 @@ function App() {
           path="contact-us"
           element={
             <Layout>
-              <ContactPage />
+              <Suspense fallback={<Loading />}>
+                <ContactPage />
+              </Suspense>
             </Layout>
           }
         />
@@ -45,7 +77,9 @@ function App() {
           path="about"
           element={
             <Layout>
-              <AboutPage />
+              <Suspense fallback={<Loading />}>
+                <AboutPage />
+              </Suspense>
             </Layout>
           }
         />
@@ -53,7 +87,9 @@ function App() {
           path="services"
           element={
             <Layout>
-              <Outlet />
+              <Suspense fallback={<Loading />}>
+                <Outlet />
+              </Suspense>
             </Layout>
           }
         >
@@ -75,6 +111,14 @@ function App() {
           <Route path="data-science" element={<DataSciencePage />} />
           <Route path="cloud-computing" element={<CloudComputingPage />} />
           <Route path="big-data" element={<BigDataPage />} />
+          <Route
+            path="*"
+            element={
+              <Layout>
+                <ErrorService />
+              </Layout>
+            }
+          />
         </Route>
         <Route
           path="industries"
