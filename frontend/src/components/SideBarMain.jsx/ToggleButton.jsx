@@ -7,7 +7,7 @@ function ToggleButton({ className }) {
 
   return (
     <button
-      className={`flex justify-center items-center w-[35px] h-[35px] rounded-[50px]  border-none cursor-pointer  ${className} bg-[#23538F] text-white`}
+      className={`flex justify-center items-center shrink-0 w-[35px] h-[35px] rounded-[50px]  border-none cursor-pointer  ${className} bg-[#23538F] text-white`}
       onClick={toggleSideBar}
     >
       {isSideBarOpen ? (

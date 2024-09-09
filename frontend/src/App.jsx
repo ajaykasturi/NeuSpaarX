@@ -141,7 +141,9 @@ function App() {
           path="*"
           element={
             <Layout>
-              <Error404 />
+              <Suspense fallback={<Loading />}>
+                <Error404 />
+              </Suspense>
             </Layout>
           }
         />
