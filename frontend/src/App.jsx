@@ -4,6 +4,7 @@ import Loading from "./components/Loading/Loading";
 import Layout from "./layout/Layout";
 import { Routes, Route, Outlet } from "react-router-dom";
 import ErrorService from "./pages/ErrorPages/ErrorService";
+import ServiceLoading from "./components/Loading/ServiceLoading";
 const ContactPage = React.lazy(() => import("./pages/ContactPage"));
 const HomePage = React.lazy(() => import("./pages/HomePage"));
 const AboutPage = React.lazy(() => import("./pages/AboutPage"));
@@ -83,11 +84,12 @@ function App() {
             </Layout>
           }
         />
+        <Route path="loading" element={<ServiceLoading />} />
         <Route
           path="services"
           element={
             <Layout>
-              <Suspense fallback={<Loading />}>
+              <Suspense fallback={<ServiceLoading />}>
                 <Outlet />
               </Suspense>
             </Layout>

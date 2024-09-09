@@ -54,11 +54,11 @@ export const navConfig = [
             path: "/services/azure",
           },
           {
-            name: "Aws",
+            name: "AWS",
             path: "/services/aws",
           },
           {
-            name: "Gcp",
+            name: "GCP",
             path: "/services/gcp",
           },
           {
