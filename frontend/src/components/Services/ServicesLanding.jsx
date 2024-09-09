@@ -4,6 +4,7 @@ import bgImgHome from "../../assets/images/bgimg.png";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import LazyImage from "../CommonComps/LazyImage";
+import NavigateBtn from "../Button/NavigateBtn";
 function ServicesLanding({ title, content, btnText, sideImg, imgClass }) {
   return (
     <div className="flex flex-col  min-h-svh sm:min-h-fit lg:min-h-dvh relative items-center">
@@ -22,12 +23,17 @@ function ServicesLanding({ title, content, btnText, sideImg, imgClass }) {
             </div>
           </div>
           {btnText && (
-            <Link to={"/contact-us"}>
-              <Button
-                name={btnText}
-                styles="px-4 py-2 lg:px-6 lg:py-3 text-[1rem] lg:text-[1.2rem]"
-              />
-            </Link>
+            <NavigateBtn
+              name={btnText}
+              path={"/contact-us"}
+              styles="px-4 py-2 lg:px-6 lg:py-3 text-[1rem] lg:text-[1.2rem]"
+            />
+            // <Link to={"/contact-us"}>
+            //   <Button
+            //     name={btnText}
+            //     styles="px-4 py-2 lg:px-6 lg:py-3 text-[1rem] lg:text-[1.2rem]"
+            //   />
+            // </Link>
           )}
         </div>
         {sideImg && (
