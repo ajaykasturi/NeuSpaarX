@@ -20,6 +20,9 @@ export default {
         companycolor: "#274797",
         colorblue: "#1B2C59",
       },
+      backgroundSize: {
+        full: "100% 100%",
+      },
       backgroundImage: {
         footerBg: "url('/src/assets/images/footer-bg.png')",
         wefocusonBg: "url('/src/assets/images/bg-wefocuson.png')",
@@ -42,6 +45,11 @@ export default {
             transform: "translateX(calc(-50% - 0.5rem))",
           },
         },
+        slideArrow: {
+          "100%": {
+            transform: "translateX(calc(-50% - 2.3rem))",
+          },
+        },
       },
       animation: {
         autoScrollInfinite: "slide 20s infinite linear",
@@ -52,6 +60,7 @@ export default {
         autoScrollInfiniteMobile15: "mobileSlide 15s infinite linear",
         autoScrollInfiniteMobile20: "mobileSlide 20s infinite linear",
         scrollLeft: "slide 5s linear",
+        animateArrowInfinte: " slideArrow 20s infinite linear",
       },
     },
   },

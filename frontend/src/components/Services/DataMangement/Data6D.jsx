@@ -53,7 +53,7 @@ function Data6D() {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-[22rem_22rem] xl:grid-cols-[22rem_22rem_22rem] place-items-center gap-8 place-content-center lg:gap-20 xl:gap-8 2xl:gap-20">
         {config.map((item) => (
-          <PowerCard key={item.id} card={item}  />
+          <PowerCard key={item.id} card={item} h="h-[30rem]"  />
         ))}
       </div>
     </div>

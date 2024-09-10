@@ -7,6 +7,8 @@ import ErrorService from "./pages/ErrorPages/ErrorService";
 import ServiceLoading from "./components/Loading/ServiceLoading";
 import AzurePage from "./pages/ServicePages/AzurePage";
 import AWSPage from "./pages/ServicePages/AWSPage";
+import GCPPage from "./pages/ServicePages/GCPPage";
+import SnowFlakePage from "./pages/ServicePages/SnowFlakePage";
 const ContactPage = React.lazy(() => import("./pages/ContactPage"));
 const HomePage = React.lazy(() => import("./pages/HomePage"));
 const AboutPage = React.lazy(() => import("./pages/AboutPage"));
@@ -117,6 +119,8 @@ function App() {
           <Route path="big-data" element={<BigDataPage />} />
           <Route path="azure" element={<AzurePage />} />
           <Route path="aws" element={<AWSPage />} />
+          <Route path="gcp" element={<GCPPage />} />
+          <Route path="snowflake" element={<SnowFlakePage />} />
           <Route
             path="*"
             element={

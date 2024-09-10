@@ -6,6 +6,7 @@ import ImgCom from "../../components/Services/ImgCom";
 import awsservices from "../../assets/aws/awsservices.png";
 import LetsConnect from "../../components/ContactUs/LetsConnect";
 import WhyAWS from "../../components/Services/AWS/WhyAWS";
+import AWSWeFollow from "../../components/Services/AWS/AWSWeFollow";
 function AWSPage() {
   return (
     <>
@@ -23,6 +24,7 @@ function AWSPage() {
       />
       <WhyAWS />
       <ImgCom img={awsservices} title={""} />
+      <AWSWeFollow />
       <LetsConnect
         title={"Get Started with AWS Today"}
         content={"Contact us to build your Cloud Solution"}
