@@ -2,18 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import contactimg from "../assets/images/contactimg.png";
 import ContactForm from "../components/ContactUs/ContactForm";
-import { Mail, Phone, MapPin } from "lucide-react";
 import LazyImage from "../components/CommonComps/LazyImage";
+import { contact } from "../constants/contact";
 function Contact() {
-  const contactInfo = [
-    { name: "Email", content: "hello@sample.io", icon: <Mail /> },
-    { name: "Phone", content: "+1 (555) 000-0000", icon: <Phone /> },
-    {
-      name: "Office",
-      content: "123 Sample St, Sydney NSW 2000 ",
-      icon: <MapPin />,
-    },
-  ];
   return (
     <div className="flex flex-col mb-20">
       <Navbar />
@@ -33,7 +24,7 @@ function Contact() {
           <ContactForm />
         </div>
         <div className="flex flex-col items-center gap-8 min-[899px]:flex-row min-[899px]:justify-evenly">
-          {contactInfo.map((item) => (
+          {contact.map((item) => (
             <div
               key={item.name}
               className="flex flex-col items-center justify-center gap-y-4"

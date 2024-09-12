@@ -5,10 +5,12 @@ import Layout from "./layout/Layout";
 import { Routes, Route, Outlet } from "react-router-dom";
 import ErrorService from "./pages/ErrorPages/ErrorService";
 import ServiceLoading from "./components/Loading/ServiceLoading";
-import AzurePage from "./pages/ServicePages/AzurePage";
-import AWSPage from "./pages/ServicePages/AWSPage";
-import GCPPage from "./pages/ServicePages/GCPPage";
-import SnowFlakePage from "./pages/ServicePages/SnowFlakePage";
+const AzurePage = React.lazy(() => import("./pages/ServicePages/AzurePage"));
+const AWSPage = React.lazy(() => import("./pages/ServicePages/AWSPage"));
+const GCPPage = React.lazy(() => import("./pages/ServicePages/GCPPage"));
+const SnowFlakePage = React.lazy(() =>
+  import("./pages/ServicePages/SnowFlakePage")
+);
 const ContactPage = React.lazy(() => import("./pages/ContactPage"));
 const HomePage = React.lazy(() => import("./pages/HomePage"));
 const AboutPage = React.lazy(() => import("./pages/AboutPage"));

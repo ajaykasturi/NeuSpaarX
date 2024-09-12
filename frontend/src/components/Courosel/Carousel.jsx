@@ -13,8 +13,8 @@ import slide3 from "../../assets/slides/slide3.png";
 export default function Carousel() {
   const slides = [slide1, slide2, slide3];
   const [emblaRef, emblaApi] = useEmblaCarousel(
-    { loop: true, active: true, align: "center", axis: "x", slidesToScroll: 1 },
-    [Autoplay()]
+    { loop: true, active: true, align: "center", axis: "x", slidesToScroll: 1 }
+    // [Autoplay()]
   );
   useEffect(() => {
     if (emblaApi) {
@@ -37,7 +37,7 @@ export default function Carousel() {
               key={slide}
               className="[flex:0_0_100%] flex justify-center items-center"
             >
-              <img src={slide} className="w-full h-full" />
+              <img src={slide} className="min-h-0 max-h-full min-w-0 max-w-full" />
             </div>
           ))}
           {/* <div className="[flex:0_0_100%] flex justify-center items-center">
