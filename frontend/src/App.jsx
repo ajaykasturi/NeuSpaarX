@@ -123,14 +123,7 @@ function App() {
           <Route path="aws" element={<AWSPage />} />
           <Route path="gcp" element={<GCPPage />} />
           <Route path="snowflake" element={<SnowFlakePage />} />
-          <Route
-            path="*"
-            element={
-              <Layout>
-                <ErrorService />
-              </Layout>
-            }
-          />
+          <Route path="*" element={<ErrorService />} />
         </Route>
         <Route
           path="industries"
