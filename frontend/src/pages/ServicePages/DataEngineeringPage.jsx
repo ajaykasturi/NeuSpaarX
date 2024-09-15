@@ -21,7 +21,7 @@ function DataEngineeringPage() {
       />
       <DataEngStages />
       <LetsConnect
-        title={"Get in touch with us!!"}
+        title={"Connect to us!"}
         content="Looking for a right partner to help you with Data Engineering expertise?"
       />
     </>

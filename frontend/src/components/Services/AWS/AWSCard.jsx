@@ -3,7 +3,7 @@ import arrow from "../../../assets/aws/arrowRight.svg";
 function AWSCard({ card }) {
   return (
     <div className="bg-[#FFFFFF82] flex flex-col shrink-0 gap-y-8 items-center p-9 max-w-[18rem] w-full h-[20rem] border-2 border-slate-50 shadow-sm rounded-3xl relative">
-      <div className="w-[5.5rem] h-[5.5rem] rounded-full bg-[#F1F1F1] shrink-0 border-2 drop-shadow-lg flex justify-center items-center p-2 overflow-hidden">
+      <div className="w-[5.5rem] h-[5.5rem] rounded-full bg-[#F1F1F1] shrink-0 border-2 drop-shadow-lg flex justify-center items-center p-4 overflow-hidden">
         <img src={card.img} className="w-full h-full" />
       </div>
       <div>

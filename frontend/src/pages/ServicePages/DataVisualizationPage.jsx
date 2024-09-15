@@ -22,7 +22,10 @@ function DataVisualizationPage() {
       />
       <DataVisualTools />
       <ApproachWeFollow />
-      <LetsConnect content="Reach out to us to help you create relevant visuals for your data to get more insights." />
+      <LetsConnect
+        title={"Get In Touch!"}
+        content="Reach out to us to help you create relevant visuals for your data to get more insights."
+      />
     </>
   );
 }

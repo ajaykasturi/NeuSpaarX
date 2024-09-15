@@ -1,40 +1,44 @@
 import React from "react";
 import AWSCard from "./AWSCard";
-
+import consulting from "../../../assets/aws/consulting.png";
+import discovery from "../../../assets/aws/discovery.png";
+import migration from "../../../assets/aws/migration.png";
+import modeling from "../../../assets/aws/modeling.png";
+import reporting from "../../../assets/aws/reporting.png";
 function AWSWeFollow() {
   const configMain = [
     {
       id: 1,
       title: "Consulting",
       content: "We assess your cloud needs and create a tailored AWS strategy.",
-      img: "",
+      img: consulting,
     },
     {
       id: 2,
       title: "Discovery",
       content: "We analyze your systems and plan the AWS migration roadmap.",
-      img: "",
+      img: discovery,
     },
     {
       id: 3,
       title: "Migration",
       content:
         "We move your systems to AWS with minimal downtime and disruption.",
-      img: "",
+      img: migration,
     },
     {
       id: 4,
       title: "Modeling",
       content:
         "We optimize AWS workflows to boost your operational efficiency.",
-      img: "",
+      img: modeling,
     },
     {
       id: 5,
       title: "Reporting",
       content:
         "We provide performance reports and ongoing AWS improvement strategies.",
-      img: "",
+      img: reporting,
     },
   ];
   const config = [...configMain, ...configMain];

@@ -2,6 +2,9 @@ import React from "react";
 import SimpleCard from "../../CommonComps/SimpleCard";
 import VCard from "./VCard";
 import UnfoldMoreDoubleIcon from "@mui/icons-material/UnfoldMoreDouble";
+import volume from "../../../assets/BigData/volume.png";
+import variety from "../../../assets/BigData/variety.png";
+import velocity from "../../../assets/BigData/velocity.png";
 function BigFocus() {
   const config = [
     {
@@ -9,21 +12,21 @@ function BigFocus() {
       title: "Volume",
       content:
         "The massive amount of data generated every second requires advanced storage, processing, and management solutions. Handling this volume is key to extracting valuable insights from diverse datasets",
-      icon: "",
+      icon: volume,
     },
     {
       id: 2,
       title: "Variety",
       content:
         "Big Data comes in multiple formats like structured databases, unstructured texts, images, and videos. Managing this variety demands flexible tools to analyze and integrate different data types effectively.",
-      icon: "",
+      icon: variety,
     },
     {
       id: 3,
       title: "Velocity",
       content:
         "The speed at which data is produced and needs to be processed is crucial. Fast-moving data streams require real-time analysis tools to ensure timely decision-making and competitive advantage.",
-      icon: "",
+      icon: velocity,
     },
   ];
   const title = "We focus on 3 V's";

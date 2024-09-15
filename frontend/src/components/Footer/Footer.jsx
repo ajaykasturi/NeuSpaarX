@@ -60,7 +60,7 @@ function Footer() {
               <div className="flex gap-x-8">
                 <div className="flex flex-col gap-y-6 items-start">
                   {servicesConfig.map((item) => (
-                    <div className="">
+                    <div className="" key={item.id}>
                       <Link
                         to={item.path}
                         className="hover:border-b-2 border-slate-950"
@@ -80,7 +80,7 @@ function Footer() {
             <div className="flex flex-col gap-y-6 items-start grow">
               <div className="text-2xl font-medium">Business</div>
               {businessConfig.map((item) => (
-                <div className="">
+                <div className="" key={item.id}>
                   <Link
                     to={item.path}
                     className="hover:border-b-2 border-slate-950"
@@ -115,7 +115,7 @@ function Footer() {
             </div>
             <div>
               <Link
-                to="contact-us"
+                to="/contact-us"
                 className="bg-[#ffffff] border rounded-full px-5 py-2 hover:bg-[#274797] hover:text-white"
               >
                 Contact Us

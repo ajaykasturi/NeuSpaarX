@@ -17,7 +17,10 @@ function PowerAutomatePage() {
       <WhatPowerAutomate />
       <PowerAutomateTools />
       <PowerAutomateUseCases />
-      <LetsConnect />
+      <LetsConnect
+        title={"Get in touch!"}
+        content={"Want to build Power Automate to use best features?"}
+      />
     </>
   );
 }

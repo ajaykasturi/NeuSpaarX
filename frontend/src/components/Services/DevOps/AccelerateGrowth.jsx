@@ -1,5 +1,8 @@
 import React from "react";
 import PowerCard from "../PowerBi/PowerCard";
+import cicd from "../../../assets/devopsimgs/cicd.png";
+import iaac from "../../../assets/devopsimgs/iaac.png";
+import automate from "../../../assets/devopsimgs/automate.png";
 function AccelerateGrowth() {
   const config = [
     {
@@ -7,21 +10,21 @@ function AccelerateGrowth() {
       title: "CI/CD Pipelines",
       content:
         "Streamline your development process with automated CI/CD pipelines, enabling faster and more reliable software releases.",
-      img: "",
+      img: cicd,
     },
     {
       id: 2,
       title: "Infrastructure as Code",
       content:
         "Automate your infrastructure management with IaC, ensuring consistency and reducing manual errors.",
-      img: "",
+      img: iaac,
     },
     {
       id: 3,
       title: "Automated Testing",
       content:
         "Ensure code quality and reliability through automated testing integrated into your pipeline.",
-      img: "",
+      img: automate,
     },
   ];
   const title = "Let's Accelerate Your Growth Together";

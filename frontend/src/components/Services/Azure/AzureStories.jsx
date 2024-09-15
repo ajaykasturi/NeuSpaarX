@@ -1,6 +1,7 @@
 import React from "react";
 import UseCaseCard from "./UseCaseCard";
-
+import migrate from "../../../assets/azure/migrate.png";
+import optimize from "../../../assets/azure/optimize.png";
 function AzureStories() {
   const config = [
     {
@@ -9,7 +10,7 @@ function AzureStories() {
       content:
         "Our client used to store their data in the on prem servers (SQL DB) due to which the costs and maintenance increased Significantly over the years.Our requirement is to reduce the costs, manage the infrastructure, eliminate on-prem hardware servers and decrease the dependency on many servers.",
       path: "/path1",
-      img: "",
+      img: migrate,
     },
     {
       id: 1,
@@ -17,7 +18,7 @@ function AzureStories() {
       content:
         "Our client is facing low data processing time and data latency with on-prem servers as they are dealing with huge amounts of data.Requirement is to have no data latency and fast data processing and to have redundancy in case of failures.",
       path: "/path2",
-      img: "",
+      img: optimize,
     },
   ];
   return (

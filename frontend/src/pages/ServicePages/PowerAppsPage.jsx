@@ -13,7 +13,12 @@ function PowerAppsPage() {
         sideImg={powerapps}
       />
       <PowerAppsIntro />
-      <LetsConnect />
+      <LetsConnect
+        title={"Want to build your Power Apps?"}
+        content={
+          "Get in touch with us to explore how we can bring your vision to life."
+        }
+      />
     </>
   );
 }

@@ -23,7 +23,7 @@ function DataIntegrationPage() {
       <DataIntegrationProcess />
       <DataIntTechStack />
       <LetsConnect
-        text="Seamless Data Integration Awaits"
+        title="Seamless Data Integration Awaits"
         content="Seamless Data Integration Awaits"
       />
     </>

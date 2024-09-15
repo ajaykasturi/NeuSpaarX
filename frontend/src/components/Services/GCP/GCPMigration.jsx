@@ -1,6 +1,9 @@
 import React from "react";
 import GCPCard from "./GCPCard";
-
+import discovery from "../../../assets/aws/discovery.png";
+import plan from "../../../assets/aws/plan.png";
+import migration from "../../../assets/aws/migration.png";
+import optimize from "../../../assets/aws/optimize.png";
 function GCPMigration() {
   const config = [
     {
@@ -8,28 +11,28 @@ function GCPMigration() {
       title: " Discover",
       content:
         "We begin by analyzing your current IT infrastructure, understanding your business needs, and identifying the key opportunities and challenges for cloud migration.",
-      img: "",
+      img: discovery,
     },
     {
       id: 2,
       title: "Plan",
       content:
         "A comprehensive migration plan is crafted, outlining the necessary resources, timelines, and risk mitigation measures to ensure a smooth transition.",
-      img: "",
+      img: plan,
     },
     {
       id: 3,
       title: "Migrate",
       content:
         "During migration, we transfer your applications, data, and workloads to Google Cloud with minimal disruptions, ensuring business continuity and data integrity.",
-      img: "",
+      img: migration,
     },
     {
       id: 4,
       title: "Optimize",
       content:
         "Once migrated, we continuously monitor and optimize your cloud environment for performance, security, and cost-efficiency.",
-      img: "",
+      img: optimize,
     },
   ];
   const configLength = config.length;
