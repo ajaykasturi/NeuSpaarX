@@ -8,10 +8,12 @@ function Contact() {
   return (
     <div className="flex flex-col mb-20">
       <Navbar />
-      <div className="flex flex-col mx-[3vw] gap-y-8 md:gap-y-20">
+      <div className="flex flex-col mx-[3vw] gap-y-8 md:gap-y-20 my-10">
         <div className="flex flex-col text-[#1B2C59] gap-y-4">
-          <div className="font-Poppins text-headingClamp">Contact Us</div>
-          <div className="font-Poppins text-contentClamp">
+          <div className="font-Poppins text-4xl text-center sm:text-5xl sm:text-left md:text-6xl">
+            Contact Us
+          </div>
+          <div className="font-Poppins text-lg text-center sm:text-left">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
             Suspendisse et justo. Praesent mattis commodo augue. Aliquam ornare
             hendrerit augue.
@@ -23,17 +25,17 @@ function Contact() {
           </div>
           <ContactForm />
         </div>
-        <div className="flex flex-col items-center gap-8 min-[899px]:flex-row min-[899px]:justify-evenly">
+        <div className="flex flex-col items-center gap-8 min-[899px]:flex-row min-[899px]:justify-evenly mt-5">
           {contact.map((item) => (
             <div
               key={item.name}
               className="flex flex-col items-center justify-center gap-y-4"
             >
               <div>{item.icon}</div>
-              <div className="text-2xl font-semibold font-Poppins text-center">
+              <div className="sm:text-xl md:text-2xl font-semibold font-Poppins text-center">
                 {item.name}
               </div>
-              <div className="text-xl font-normal font-Poppins text-center">
+              <div className="md:text-xl font-normal font-Poppins text-center">
                 {item.content}
               </div>
             </div>

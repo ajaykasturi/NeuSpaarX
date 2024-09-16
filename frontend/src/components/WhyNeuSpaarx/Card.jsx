@@ -16,7 +16,7 @@ function Card({ card }) {
       <div className="w-[5.5rem] h-[5.5rem] rounded-full bg-[#F1F1F1] shrink-0 border-2 drop-shadow-lg flex justify-center items-center p-3 overflow-hidden">
         <img src={card.icon} className="w-full h-full" />
       </div>
-      <div>
+      <div className="flex flex-col gap-y-2">
         <h1 className="text-xl font-semibold font-Poppins text-center">
           {card.title}
         </h1>

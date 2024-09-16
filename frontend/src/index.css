@@ -83,3 +83,17 @@ html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.select-btn {
+  appearance: none; /* Hide the default arrow */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+}
+.select-btn::after {
+  content: "▼"; /* Unicode for downward triangle */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Allow clicking on the select element */
+}

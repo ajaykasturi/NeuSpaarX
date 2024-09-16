@@ -13,7 +13,7 @@ function AzureStories() {
       img: migrate,
     },
     {
-      id: 1,
+      id: 2,
       title: "Optimize the management of data from to Azure",
       content:
         "Our client is facing low data processing time and data latency with on-prem servers as they are dealing with huge amounts of data.Requirement is to have no data latency and fast data processing and to have redundancy in case of failures.",

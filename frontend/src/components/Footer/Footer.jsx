@@ -35,7 +35,7 @@ function Footer() {
     {
       id: 6,
       name: "Web Development",
-      path: "/services/web-dev",
+      path: "/services/wordpress",
     },
   ];
   return (

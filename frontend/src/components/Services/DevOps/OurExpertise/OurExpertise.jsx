@@ -5,7 +5,6 @@ import support from "../../../../assets/devopsimgs/support.png";
 import orchestrate from "../../../../assets/devopsimgs/orchestrate.png";
 import security from "../../../../assets/devopsimgs/security.png";
 import monitor from "../../../../assets/devopsimgs/monitor.png";
-import { Moon } from "lucide-react";
 function OurExpertise() {
   const config = [
     {
@@ -33,7 +32,12 @@ function OurExpertise() {
       img: monitor,
     },
     { id: 5, title: "Security", content: "Robust Protection", img: security },
-    { id: 6, title: "Orchestration", content: " Seamless Automation", img: orchestrate},
+    {
+      id: 6,
+      title: "Orchestration",
+      content: " Seamless Automation",
+      img: orchestrate,
+    },
   ];
   return (
     <div className="h-full bg-mainBgImg bg-no-repeat bg-cover border-2 rounded-3xl px-[0vw] py-10 flex flex-col items-center gap-y-8">

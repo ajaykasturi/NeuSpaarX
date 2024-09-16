@@ -129,8 +129,8 @@ export const navConfig = [
       {
         subNavHeading: "",
         subitems: [
-          { name: "Blog", path: "/blog" },
-          { name: "Case Studies", path: "/case-studies" },
+          { name: "Blog", path: "/resources/blog" },
+          { name: "Case Studies", path: "/resources/case-studies" },
         ],
       },
     ],

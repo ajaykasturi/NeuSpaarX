@@ -8,7 +8,7 @@ function LetsConnect({
 }) {
   const navigate = useNavigate();
   return (
-    <div className="my-10 mx-[5vw] flex flex-col gradient-border py-10 sm:py-16 rounded-3xl items-center gap-y-10 px-[5vw] justify-center">
+    <div className="my-28 mx-[5vw] flex flex-col gradient-border py-10 sm:py-16 rounded-3xl items-center gap-y-10 px-[5vw] justify-center">
       <div className="flex flex-col items-center text-[#1B2C59] gap-y-2">
         <div className="text-2xl min-[450px]:text-3xl sm:text-4xl md:text-5xl text-center">
           {title}

@@ -6,6 +6,7 @@ import ds from "../../assets/home/ds.png";
 import dm from "../../assets/home/dm.png";
 import devops from "../../assets/home/devops.png";
 import bapps from "../../assets/home/bapps.png";
+import { Link } from "react-router-dom";
 function Services() {
   const servicesConfig = [
     {
@@ -14,6 +15,7 @@ function Services() {
       content:
         "NeuSpaarX offers a complete set of BI services that will help businesses improve their performance and growth.",
       icon: bi,
+      path: "/services/power-bi",
     },
     {
       id: "2",
@@ -21,6 +23,7 @@ function Services() {
       content:
         "Optimize your business in the cloud with the help of NeuSpaarX, an experienced team.",
       icon: cc,
+      path: "/services/cloud-computing",
     },
     {
       id: "3",
@@ -28,6 +31,7 @@ function Services() {
       content:
         "Using Data Science & ML, We provide solutions that deliver insights and helps in growth.",
       icon: ds,
+      path: "/services/data-science",
     },
     {
       id: "4",
@@ -35,6 +39,7 @@ function Services() {
       content:
         "Integrating Data Management with BI services, we ensure that you have timely access to quality and accurate data.",
       icon: dm,
+      path: "/services/data-management",
     },
     {
       id: "5",
@@ -42,6 +47,7 @@ function Services() {
       content:
         "For continuous development, testing, deployment, and maintenance without compromising reliability or security.",
       icon: devops,
+      path: "/services/devops",
     },
     {
       id: "6",
@@ -49,14 +55,17 @@ function Services() {
       content:
         "Convert multiple complex processes into a single, user-friendly app accessible anytime, anywhere.",
       icon: bapps,
+      path: "/services/powerapps",
     },
   ];
   return (
-    <div className="flex flex-col gap-y-10 items-center bg-servicesBg bg-cover bg-no-repeat py-12 my-6 rounded-[1.875rem]">
+    <div className="flex flex-col gap-y-16 items-center bg-servicesBg bg-cover bg-no-repeat py-12 my-6 rounded-[1.875rem]">
       <div className="font-Poppins font-normal text-5xl">Our Services</div>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 justify-items-center gap-16 max-[380px]:gap-4 sm:gap-x-2 sm:gap-y-0 md:gap-4 min-[850px]:gap-16">
         {servicesConfig.map((card) => (
-          <Card card={card} key={card.id} />
+          <Link key={card.id} to={card.path}>
+            <Card card={card} />
+          </Link>
         ))}
       </div>
     </div>
