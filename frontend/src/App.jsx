@@ -6,6 +6,7 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import ErrorService from "./pages/ErrorPages/ErrorService";
 import ServiceLoading from "./components/Loading/ServiceLoading";
 import CaseStudiesPage from "./pages/ResourcePages/CaseStudiesPage";
+import BlogPage from "./pages/ResourcePages/BlogPage";
 const AzurePage = React.lazy(() => import("./pages/ServicePages/AzurePage"));
 const AWSPage = React.lazy(() => import("./pages/ServicePages/AWSPage"));
 const GCPPage = React.lazy(() => import("./pages/ServicePages/GCPPage"));
@@ -103,6 +104,7 @@ function App() {
           }
         >
           <Route path="case-studies" element={<CaseStudiesPage />} />
+          <Route path="blog" element={<BlogPage />} />
         </Route>
         <Route
           path="services"
