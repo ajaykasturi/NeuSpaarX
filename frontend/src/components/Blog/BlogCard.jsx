@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 function BlogCard({ blog }) {
   return (
-    <div className="flex flex-col items-start gap-y-5 max-w-[25rem] sm:max-w-[30rem] min-[960px]:max-w-[25rem] min-[960px]:min-w-[25rem] rounded-2xl p-1 overflow-hidden">
+    <div className="flex flex-col items-start gap-y-5 max-w-[25rem] sm:max-w-[30rem] min-[960px]:max-w-[25rem] min-[960px]:min-w-[25rem] rounded-2xl p-1 overflow-hidden cursor-pointer transition-all hover:scale-[1.01] duration-500">
       <div className="bg-[#DBDBDB] w-full aspect-[16/8] rounded-2xl"></div>
       <div className="flex flex-col gap-y-1">
         <h2 className="font-medium font-Poppins text-sm">{blog.category}</h2>
