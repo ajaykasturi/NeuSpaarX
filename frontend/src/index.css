@@ -97,3 +97,10 @@ html {
   transform: translateY(-50%);
   pointer-events: none; /* Allow clicking on the select element */
 }
+
+.inputBox:invalid {
+  border: 1.5px solid red;
+}
+.inputBox:valid {
+  border: 1.5px solid green;
+}
