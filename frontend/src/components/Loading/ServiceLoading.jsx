@@ -2,7 +2,7 @@ import React from "react";
 
 function ServiceLoading() {
   return (
-    <div className="flex flex-col border min-h-dvh border-blue-300 shadow rounded-md p-4 m-1 relative items-center">
+    <div className="animate-pulse flex flex-col border min-h-dvh border-blue-300 shadow rounded-md p-4 m-1 relative items-center">
       <div className="bg-slate-50 rounded flex justify-between px-10 py-2 w-full">
         <div className="grow">
           <div className="rounded-full bg-slate-200 size-[5rem]"></div>

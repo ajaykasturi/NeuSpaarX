@@ -6,7 +6,10 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import ErrorService from "./pages/ErrorPages/ErrorService";
 import ServiceLoading from "./components/Loading/ServiceLoading";
 import CaseStudiesPage from "./pages/ResourcePages/CaseStudiesPage";
-import BlogPage from "./pages/ResourcePages/BlogPage";
+import BlogPageSkelton from "./pages/ResourcePages/Skelton/BlogPageSkelton";
+
+const BlogPage = React.lazy(() => import("./pages/ResourcePages/BlogPage"));
+const BlogMain = React.lazy(() => import("./pages/ResourcePages/BlogMain"));
 const AzurePage = React.lazy(() => import("./pages/ServicePages/AzurePage"));
 const AWSPage = React.lazy(() => import("./pages/ServicePages/AWSPage"));
 const GCPPage = React.lazy(() => import("./pages/ServicePages/GCPPage"));
@@ -92,19 +95,27 @@ function App() {
             </Layout>
           }
         />
-        <Route path="loading" element={<ServiceLoading />} />
+        <Route path="service-loading" element={<ServiceLoading />} />
+        <Route path="resource-loading" element={<BlogPageSkelton />} />
         <Route
           path="resources"
           element={
             <Layout>
-              <Suspense fallback={<Loading />}>
+              <Suspense fallback={<BlogPageSkelton />}>
                 <Outlet />
               </Suspense>
             </Layout>
           }
         >
           <Route path="case-studies" element={<CaseStudiesPage />} />
-          <Route path="blog" element={<BlogPage />} />
+          <Route
+            path="blog"
+            element={
+              <BlogMain>
+                <BlogPage />
+              </BlogMain>
+            }
+          />
         </Route>
         <Route
           path="services"
