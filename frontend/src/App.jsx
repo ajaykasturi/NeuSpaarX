@@ -7,6 +7,7 @@ import ErrorService from "./pages/ErrorPages/ErrorService";
 import ServiceLoading from "./components/Loading/ServiceLoading";
 import CaseStudiesPage from "./pages/ResourcePages/CaseStudiesPage";
 import BlogPageSkelton from "./pages/ResourcePages/Skelton/BlogPageSkelton";
+import CareersPage from "./pages/CareersPage";
 
 const BlogPage = React.lazy(() => import("./pages/ResourcePages/BlogPage"));
 const BlogMain = React.lazy(() => import("./pages/ResourcePages/BlogMain"));
@@ -91,6 +92,16 @@ function App() {
             <Layout>
               <Suspense fallback={<Loading />}>
                 <AboutPage />
+              </Suspense>
+            </Layout>
+          }
+        />
+        <Route
+          path="careers"
+          element={
+            <Layout>
+              <Suspense fallback={<Loading />}>
+                <CareersPage />
               </Suspense>
             </Layout>
           }

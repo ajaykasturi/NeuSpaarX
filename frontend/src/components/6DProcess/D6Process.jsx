@@ -5,9 +5,17 @@ import developImg from "../../assets/6DProcessImages/develop.png";
 import designImg from "../../assets/6DProcessImages/design.png";
 import deployImg from "../../assets/6DProcessImages/deploy.png";
 import deliverImg from "../../assets/6DProcessImages/deliver.png";
+import discoverImg from "../../assets/6DProcessImages/discover.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 function D6Process() {
   const config = [
+    {
+      id: 0,
+      title: "Discover",
+      content:
+        "We meet clients and discover what they are doing currently and what they want us to do.",
+      img: discoverImg,
+    },
     {
       id: 1,
       title: "Define",

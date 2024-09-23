@@ -18,12 +18,12 @@ function D6Card({ card, i, progress, targetScale, range }) {
         style={{ position: "relative", top: `calc(-1% + ${i * 25}px)`, scale }}
         className="flex flex-col lg:flex-row  items-center justify-start  border-[0.5px] shadow bg-gray-50 border-companycolor  rounded-2xl break-words h-[25rem] w-full lg:w-[50rem] overflow-hidden p-4 gap-6"
       >
-        <div className="rounded-3xl relative overflow-hidden size-[11.5rem] min-[800px]:size-[13rem] lg:size-[20rem] shrink-0 ">
+        <div className="rounded-3xl relative overflow-hidden size-[11.5rem] min-[800px]:size-[13rem] lg:size-[20rem] shrink-0">
           <motion.div
             style={{ scale: scaleImg }}
             className="bg-[#EDEDED] w-full h-full"
           >
-            <img src={card.img} className="w-full h-full object-cover" />
+            <img src={card.img} className="w-full h-full object-cover p-10" />
           </motion.div>
         </div>
         <div className="flex flex-col gap-y-5 items-center justify-center max-w-[35rem]">

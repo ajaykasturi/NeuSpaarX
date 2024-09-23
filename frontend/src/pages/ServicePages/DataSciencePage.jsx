@@ -1,6 +1,6 @@
 import React from "react";
 import ServicesLanding from "../../components/Services/ServicesLanding";
-import datascienceimg from "../../assets/datascience/dsimg.webp";
+import datascienceimg from "../../assets/datascience/datasciencelanding.png";
 import SimpleCard from "../../components/CommonComps/SimpleCard";
 import DSApproach from "../../components/Services/DataScience/DSApproach";
 import CoreSolutions from "../../components/Services/DataScience/CoreSolutions";

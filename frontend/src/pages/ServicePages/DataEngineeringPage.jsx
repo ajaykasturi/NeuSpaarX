@@ -1,6 +1,6 @@
 import React from "react";
 import ServicesLanding from "../../components/Services/ServicesLanding";
-import dataeng from "../../assets/images/dataengineering.png";
+import dataeng from "../../assets/dataeng/dataenglanding.png";
 import SimpleCard from "../../components/CommonComps/SimpleCard";
 import LetsConnect from "../../components/ContactUs/LetsConnect";
 import DataEngStages from "../../components/Services/DataEngineering/Stages/DataEngStages";

@@ -1,6 +1,6 @@
 import React from "react";
 import ServicesLanding from "../../components/Services/ServicesLanding";
-import powerapps from "../../assets/images/powerapps.png";
+import powerapps from "../../assets/powerapps/powerappslanding.png";
 import LetsConnect from "../../components/ContactUs/LetsConnect";
 import PowerAppsIntro from "../../components/Services/PowerApps/PowerAppsIntro";
 function PowerAppsPage() {

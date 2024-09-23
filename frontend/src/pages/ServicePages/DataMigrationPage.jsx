@@ -1,6 +1,6 @@
 import React from "react";
 import ServicesLanding from "../../components/Services/ServicesLanding";
-import datamigration from "../../assets/images/datamigration.png";
+import datamigration from "../../assets/datamigration/dmigration.png";
 import SimpleCard from "../../components/CommonComps/SimpleCard";
 import DataMigrationApproach from "../../components/Services/DataMigration/DataMigrationApproach";
 import DataMigrationPhases from "../../components/Services/DataMigration/DataMigrationPhases";

@@ -15,7 +15,7 @@ function ServiceLoading() {
           <div className="h-16 bg-slate-200 rounded-full w-full"></div>
         </nav>
       </div>
-      <div className="animate-pulse grid grid-cols-1   sm:grid sm:grid-cols-2 items-center justify-items-center grow  gap-8 sm:pb-10 mx-[4vw]  w-full">
+      <div className="animate-pulse grid grid-cols-1   sm:grid sm:grid-cols-[2fr_1fr] items-center justify-items-center grow  gap-8 sm:pb-10 mx-[4vw]  w-full">
         <div className="flex flex-col gap-y-3 items-center sm:items-start  w-full pl-10 h-full justify-center">
           <div className="text-[#1B2C59] flex flex-col gap-y-2 items-start  w-full">
             <div className="h-16 bg-slate-200 rounded max-w-md w-full"></div>

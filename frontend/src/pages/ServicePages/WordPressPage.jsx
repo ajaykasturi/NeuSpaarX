@@ -1,6 +1,6 @@
 import React from "react";
 import ServicesLanding from "../../components/Services/ServicesLanding";
-import wordpress from "../../assets/images/wordpress.png";
+import wordpress from "../../assets/wordpress/wordPressLanding.png";
 import LetsConnect from "../../components/ContactUs/LetsConnect";
 import IntroCard from "../../components/Services/WordPress/IntroCard";
 import ExpertiseSolutions from "../../components/Services/WordPress/ExpertiseSolutions/ExpertiseSolutions";
