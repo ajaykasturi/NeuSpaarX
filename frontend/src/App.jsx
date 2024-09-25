@@ -8,6 +8,8 @@ import ServiceLoading from "./components/Loading/ServiceLoading";
 import CaseStudiesPage from "./pages/ResourcePages/CaseStudiesPage";
 import BlogPageSkelton from "./pages/ResourcePages/Skelton/BlogPageSkelton";
 import CareersPage from "./pages/CareersPage";
+import MdToHtml from "./utils/MdToHtml";
+import BlogView from "./components/Blog/BlogView";
 
 const BlogPage = React.lazy(() => import("./pages/ResourcePages/BlogPage"));
 const BlogMain = React.lazy(() => import("./pages/ResourcePages/BlogMain"));
@@ -108,6 +110,7 @@ function App() {
         />
         <Route path="service-loading" element={<ServiceLoading />} />
         <Route path="resource-loading" element={<BlogPageSkelton />} />
+        <Route path="markdown-to-html" element={<MdToHtml />} />
         <Route
           path="resources"
           element={
@@ -119,14 +122,10 @@ function App() {
           }
         >
           <Route path="case-studies" element={<CaseStudiesPage />} />
-          <Route
-            path="blog"
-            element={
-              <BlogMain>
-                <BlogPage />
-              </BlogMain>
-            }
-          />
+          <Route path="blog" element={<BlogMain />}>
+            <Route index element={<BlogPage />} />
+            <Route path=":blogId" element={<BlogView />} />
+          </Route>
         </Route>
         <Route
           path="services"

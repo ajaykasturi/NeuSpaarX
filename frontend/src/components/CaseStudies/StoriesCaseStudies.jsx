@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import UseCaseCard from "../Services/Azure/UseCaseCard";
-
+import CaseStudyCard from "./CaseStudyCard";
 function StoriesCaseStudies() {
   const [selected, setSelected] = useState("");
   const config = [
@@ -33,6 +32,24 @@ function StoriesCaseStudies() {
     },
     {
       id: 4,
+      title: "Optimize the management of data from to Azure",
+      content:
+        "Our client is facing low data processing time and data latency with on-prem servers as they are dealing with huge amounts of data.Requirement is to have no data latency and fast data processing and to have redundancy in case of failures.",
+      path: "/path2",
+      img: "",
+      category: "devops",
+    },
+    {
+      id: 5,
+      title: "Optimize the management of data from to Azure",
+      content:
+        "Our client is facing low data processing time and data latency with on-prem servers as they are dealing with huge amounts of data.Requirement is to have no data latency and fast data processing and to have redundancy in case of failures.",
+      path: "/path2",
+      img: "",
+      category: "devops",
+    },
+    {
+      id: 6,
       title: "Optimize the management of data from to Azure",
       content:
         "Our client is facing low data processing time and data latency with on-prem servers as they are dealing with huge amounts of data.Requirement is to have no data latency and fast data processing and to have redundancy in case of failures.",
@@ -75,9 +92,9 @@ function StoriesCaseStudies() {
         </label>
       </div>
       <div className="flex justify-center items-center my-10">
-        <div className="flex flex-col gap-y-10 w-full max-w-[90%]">
+        <div className="grid grid-cols-1 gap-y-12 min-[960px]:grid-cols-2 min-[960px]:gap-6  lg:gap-8 xl:gap-10 min-[1400px]:grid-cols-3 min-[1400px]:gap-16">
           {searchList.map((card) => (
-            <UseCaseCard key={card.id} card={card} imgBg="bg-[#DBDBDB]" />
+            <CaseStudyCard key={card.id} card={card} imgBg="bg-[#DBDBDB]" />
           ))}
         </div>
       </div>
