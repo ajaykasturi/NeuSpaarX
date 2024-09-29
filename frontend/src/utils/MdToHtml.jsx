@@ -15,7 +15,7 @@ function MdToHtml(props) {
   const [state, setState] = useState("");
   useEffect(() => {
     props.path &&
-      import(/* @vite-ignore */ `../mdblogs/${props.path}`).then((res) =>
+      import(/* @vite-ignore */ `/mdblogs/${props.path}`).then((res) =>
         fetch(res.default)
           .then((res) => res.text())
           .then((res) => setState(res))

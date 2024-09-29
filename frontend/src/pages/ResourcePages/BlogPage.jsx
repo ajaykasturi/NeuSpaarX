@@ -1,9 +1,8 @@
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
 import BlogCard from "../../components/Blog/BlogCard";
-import { blogs } from "../../constants/blog";
-import LetsConnect from "../../components/ContactUs/LetsConnect";
+import { blogs as blogPosts } from "../../constants/blog";
 function BlogPage() {
+  const blogs = blogPosts.sort((a, b) => b.id - a.id);
   return (
     <>
       <div className="flex justify-center items-center my-10 mx-[5vw]">

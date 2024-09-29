@@ -8,7 +8,7 @@ function BlogCard({ blog }) {
       className="flex flex-col items-start gap-y-5 max-w-[25rem] sm:max-w-[30rem] min-[960px]:max-w-[25rem] min-[960px]:min-w-[25rem] rounded-2xl p-1 overflow-hidden cursor-pointer transition-all hover:scale-[1.01] duration-500"
     >
       <div className="bg-[#DBDBDB] w-full aspect-[16/8] max-h-[12rem] rounded-2xl">
-        <img src={blog.img} className="rounded-2xl w-full h-full object-cover" />
+        <img src={blog.img} className="rounded-2xl w-full h-full object-cover border-[0.5px]" />
       </div>
       <div className="flex flex-col gap-y-1  w-full">
         <h2 className="font-medium font-Poppins text-sm">{blog.category}</h2>
